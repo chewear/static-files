@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Koodi AI Automation Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-neutral-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="index.html" class="text-2xl md:text-3xl font-bold text-black">
+                    <span class="text-[#F3BF00]">Koodi</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-neutral-700 hover:text-black font-medium">Home</a>
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-black font-medium">Services</button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="services/ai-automation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-t-xl">AI & Workflow Automation</a>
+                            <a href="services/integration-api.html" class="block px-6 py-3 hover:bg-neutral-50">System Integration & API</a>
+                            <a href="services/web-cms.html" class="block px-6 py-3 hover:bg-neutral-50">Web & CMS Modernization</a>
+                            <a href="services/digital-transformation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-b-xl">Digital Transformation</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
+                    <a href="faq.html" class="text-black font-semibold border-b-2 border-[#F3BF00]">FAQ</a>
+                    <a href="contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
+                    <a href="contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+        <div class="flex justify-between items-center p-4 border-b">
+            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <button id="close-menu-button" class="p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="index.html" class="block text-lg py-2">Home</a>
+            <div class="space-y-2">
+                <p class="text-sm font-semibold text-neutral-500 uppercase">Services</p>
+                <a href="services/ai-automation.html" class="block text-lg py-2 pl-4">AI & Workflow Automation</a>
+                <a href="services/integration-api.html" class="block text-lg py-2 pl-4">System Integration & API</a>
+                <a href="services/web-cms.html" class="block text-lg py-2 pl-4">Web & CMS Modernization</a>
+                <a href="services/digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
+            </div>
+            <a href="blog.html" class="block text-lg py-2">Case Studies</a>
+            <a href="faq.html" class="block text-lg font-semibold text-black py-2">FAQ</a>
+            <a href="contact.html" class="block text-lg py-2">Contact</a>
+            <a href="contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                    Frequently Asked Questions
+                </h1>
+                <p class="text-lg md:text-xl text-neutral-700 mb-8">
+                    Find answers to common questions about AI workflow automation, business process automation services, and how Koodi can transform your operations.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-sky-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How does AI workflow automation differ from traditional automation tools?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        AI workflow automation goes beyond rule-based processes. Traditional automation tools follow fixed instructions, while AI-powered workflow tools learn from data and adapt over time. This enables your business to automate complex tasks, enhance accuracy, and adapt to changing conditions without requiring constant manual updates.
+                    </p>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-violet-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can AI automation save my team time without hiring extra staff?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Yes. Our AI automation services handle repetitive tasks, streamline approvals, and consolidate workflows to enhance efficiency.
+                    </p>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-emerald-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do I need a dedicated IT team to use AI for business automation?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        No. Our AI integration services are designed for simplicity. We deploy, train, and support your team so you can implement AI-powered workflow tools without a full IT department.
+                    </p>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-rose-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How do you integrate an AI system with my existing tools, such as CRMs or CMS?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        We assess your existing systems and design custom AI solutions that connect your tools efficiently and effectively. Whether it's CRMs like Salesforce or HubSpot, or CMS platforms like WordPress and Drupal, our AI system integration ensures smooth data flow and unified workflows without disrupting daily operations.
+                    </p>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-amber-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you offer custom AI solutions tailored to my business processes?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Absolutely. Koodi specializes in custom AI solutions and end-to-end AI automation. We map your workflows, identify automation opportunities, and implement solutions that fit your unique business needs, whether for small business automation or enterprise-level operations.
+                    </p>
+                </div>
+                
+                <!-- FAQ 6 -->
+                <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-indigo-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can AI workflow automation work across multiple software platforms?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Yes. Our AI integration tech supports cross-platform automation. You can connect CRMs, marketing platforms, accounting software, and project management tools into intelligent automation solutions that work together, eliminating manual data entry and reducing errors.
+                    </p>
+                </div>
+                
+                <!-- FAQ 7 -->
+                <div class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-fuchsia-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How long does it take to deploy AI automation solutions in a small business?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Deployment depends on the complexity of your workflows. Most small businesses see AI-powered business automation operational within 2–6 weeks.
+                    </p>
+                </div>
+                
+                <!-- FAQ 8 -->
+                <div class="bg-gradient-to-br from-lime-50 via-white to-green-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-lime-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you provide training for my team to use AI-powered business automation effectively?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Yes. Our collaborative approach includes hands-on training and documentation. Your team learns how to manage AI workflow automation, monitor dashboards, and use automation platforms to achieve consistent efficiency and better business outcomes.
+                    </p>
+                </div>
+                
+                <!-- FAQ 9 -->
+                <div class="bg-gradient-to-br from-cyan-50 via-white to-sky-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-cyan-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">What is the cost of implementing AI automation services for my business?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Costs vary depending on the size of your business and the complexity of your workflows. Koodi provides custom AI solutions tailored to your budget, maximizing ROI. We focus on value-driven implementation so your investment directly saves time and reduces operational costs.
+                    </p>
+                </div>
+                
+                <!-- FAQ 10 -->
+                <div class="bg-gradient-to-br from-orange-50 via-white to-amber-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-orange-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How do I calculate the ROI of AI-powered workflow tools?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        ROI can be measured by tracking time savings, reduced errors, and increased productivity. For example, automated client onboarding or reporting dashboards can free hours per week and cut manual labor costs, allowing you to redirect resources toward growth.
+                    </p>
+                </div>
+                
+                <!-- FAQ 11 -->
+                <div class="bg-gradient-to-br from-teal-50 via-white to-emerald-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-teal-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Are AI automation services worth it for small businesses with limited budgets?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Yes. Our AI-driven small business automation solutions are designed to deliver maximum impact with minimal upfront investment. Even small teams can benefit from AI-powered workflow tools that streamline operations, reduce errors, and increase output.
+                    </p>
+                </div>
+                
+                <!-- FAQ 12 -->
+                <div class="bg-gradient-to-br from-purple-50 via-white to-fuchsia-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-purple-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can AI digital transformation services provide measurable KPIs?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Yes. Our AI digital transformation services track and measure KPIs such as workflow efficiency, task completion times, and error reduction. These metrics help your team see tangible improvements and continually optimize operations.
+                    </p>
+                </div>
+                
+                <!-- FAQ 13 -->
+                <div class="bg-gradient-to-br from-pink-50 via-white to-rose-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-pink-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Is my business data safe with AI system integration?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        Absolutely. All integrations comply with industry-standard data protection protocols, ensuring sensitive business and client information remains secure across AI-powered tools.
+                    </p>
+                </div>
+                
+                <!-- FAQ 14 -->
+                <div class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-blue-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do AI automation tools require constant monitoring by my team?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        No. Our intelligent automation solutions are designed to operate autonomously. While we provide oversight and optimization support, your team only needs to monitor exceptions or performance dashboards, saving significant time and effort.
+                    </p>
+                </div>
+                
+                <!-- FAQ 15 -->
+                <div class="bg-gradient-to-br from-yellow-50 via-white to-amber-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-yellow-100">
+                    <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How does Koodi support businesses after the deployment of your AI automation system?</h3>
+                    <p class="text-neutral-700 leading-relaxed">
+                        We provide ongoing support, workflow optimization, and training to ensure your AI-powered tools remain effective. Our team monitors performance, implements improvements, and guides your team in leveraging AI integration tech for maximum efficiency and growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-[#F3BF00] to-yellow-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+                Still Have Questions?
+            </h2>
+            <p class="text-lg text-black/80 mb-8">
+                Our team is here to help. Book a free consultation to discuss your specific automation needs and discover how AI can transform your business.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-black text-[#F3BF00] font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                    Book Your Free Consultation
+                </a>
+                <a href="services/ai-automation.html" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                    Learn About Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="services/ai-automation.html" class="hover:text-[#F3BF00] transition">AI & Workflow Automation</a></li>
+                        <li><a href="services/integration-api.html" class="hover:text-[#F3BF00] transition">System Integration & API</a></li>
+                        <li><a href="services/web-cms.html" class="hover:text-[#F3BF00] transition">Web & CMS Modernization</a></li>
+                        <li><a href="services/digital-transformation.html" class="hover:text-[#F3BF00] transition">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="faq.html" class="hover:text-[#F3BF00] transition">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Get Started</h4>
+                    <a href="contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-neutral-800 pt-8 text-center text-neutral-400">
+                <p>&copy; 2025 Koodi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies & Insights - Koodi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-neutral-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="index.html" class="text-2xl md:text-3xl font-bold text-black">
+                    <span class="text-[#F3BF00]">Koodi</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-neutral-700 hover:text-black font-medium">Home</a>
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-black font-medium">Services</button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="services/ai-automation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-t-xl">AI & Workflow Automation</a>
+                            <a href="services/integration-api.html" class="block px-6 py-3 hover:bg-neutral-50">System Integration & API</a>
+                            <a href="services/web-cms.html" class="block px-6 py-3 hover:bg-neutral-50">Web & CMS Modernization</a>
+                            <a href="services/digital-transformation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-b-xl">Digital Transformation</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-black font-semibold border-b-2 border-[#F3BF00]">Case Studies</a>
+                    <a href="contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
+                    <a href="contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+        <div class="flex justify-between items-center p-4 border-b">
+            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <button id="close-menu-button" class="p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="index.html" class="block text-lg py-2">Home</a>
+            <div class="space-y-2">
+                <p class="text-sm font-semibold text-neutral-500 uppercase">Services</p>
+                <a href="services/ai-automation.html" class="block text-lg py-2 pl-4">AI & Workflow Automation</a>
+                <a href="services/integration-api.html" class="block text-lg py-2 pl-4">System Integration & API</a>
+                <a href="services/web-cms.html" class="block text-lg py-2 pl-4">Web & CMS Modernization</a>
+                <a href="services/digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
+            </div>
+            <a href="blog.html" class="block text-lg font-semibold text-black py-2">Case Studies</a>
+            <a href="contact.html" class="block text-lg py-2">Contact</a>
+            <a href="contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                    Success Stories & Insights
+                </h1>
+                <p class="text-lg md:text-xl text-neutral-700 mb-8">
+                    Discover how businesses like yours are transforming their operations with AI automation, system integration, and digital transformation strategies.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-6 py-2 rounded-xl bg-[#F3BF00] text-black font-semibold shadow-md">All Posts</button>
+                <button class="px-6 py-2 rounded-xl bg-white text-neutral-700 font-medium border-2 border-neutral-200 hover:border-[#F3BF00] transition">Case Studies</button>
+                <button class="px-6 py-2 rounded-xl bg-white text-neutral-700 font-medium border-2 border-neutral-200 hover:border-[#F3BF00] transition">AI Automation</button>
+                <button class="px-6 py-2 rounded-xl bg-white text-neutral-700 font-medium border-2 border-neutral-200 hover:border-[#F3BF00] transition">Integration</button>
+                <button class="px-6 py-2 rounded-xl bg-white text-neutral-700 font-medium border-2 border-neutral-200 hover:border-[#F3BF00] transition">Digital Transformation</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Studies Grid -->
+    <section class="py-16 md:py-24 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Featured Case Study -->
+            <div class="mb-16">
+                <div class="bg-gradient-to-br from-white to-neutral-50 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition fade-in">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                        <div class="bg-gradient-to-br from-[#F3BF00]/20 to-yellow-100 p-12 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-32 h-32 text-[#F3BF00] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <p class="text-lg font-semibold text-black">Featured Case Study</p>
+                            </div>
+                        </div>
+                        <div class="p-12">
+                            <div class="mb-4">
+                                <span class="inline-block px-4 py-1 bg-[#F3BF00] text-black text-sm font-semibold rounded-full">Case Study</span>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+                                How We Helped a Marketing Agency Save 15 Hours Per Week
+                            </h2>
+                            <p class="text-lg text-neutral-700 mb-6">
+                                Discover how we automated client reporting, project workflows, and communication handoffs for a growing creative agency, resulting in significant time savings and improved client satisfaction.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-lg">AI Automation</span>
+                                <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-lg">Integration</span>
+                                <span class="px-3 py-1 bg-neutral-100 text-neutral-700 text-sm rounded-lg">Marketing Agency</span>
+                            </div>
+                            <p class="text-neutral-500 text-sm mb-6">Coming Soon</p>
+                            <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline">
+                                Get Similar Results
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Studies Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Case Study 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-[#F3BF00]/20 to-yellow-100 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-[#F3BF00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">E-commerce</span>
+                        <h3 class="text-xl font-bold text-black mb-3">E-commerce Brand Streamlines Order Management</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Learn how we integrated inventory, shipping, and customer systems to reduce errors and speed up fulfillment.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Case Study 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-neutral-100 to-neutral-200 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">SaaS Startup</span>
+                        <h3 class="text-xl font-bold text-black mb-3">Startup Scales with Fractional CTO Support</h3>
+                        <p class="text-neutral-700 mb-4">
+                            See how our fractional CTO service helped a growing startup align technology with their rapid expansion goals.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Case Study 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-[#F3BF00]/10 to-yellow-50 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-[#F3BF00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">Enterprise</span>
+                        <h3 class="text-xl font-bold text-black mb-3">Enterprise Modernizes Legacy CMS Platform</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Discover how we migrated an enterprise's outdated CMS to a modern headless solution without disrupting operations.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Insight 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">Guide</span>
+                        <h3 class="text-xl font-bold text-black mb-3">5 AI Workflows Agencies Can Deploy in 2025</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Free guide: Practical AI workflows you can implement without hiring a development team.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Download Guide
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Insight 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">Insight</span>
+                        <h3 class="text-xl font-bold text-black mb-3">The ROI of System Integration</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Why connecting your business systems delivers measurable returns and how to calculate the value.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Read Article
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Insight 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition fade-in">
+                    <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 h-48 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-neutral-100 text-neutral-700 text-xs font-semibold rounded-full mb-3">Checklist</span>
+                        <h3 class="text-xl font-bold text-black mb-3">Digital Transformation Readiness Checklist</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Assess your organization's readiness for digital transformation with this comprehensive checklist.
+                        </p>
+                        <p class="text-neutral-500 text-sm mb-4">Coming Soon</p>
+                        <a href="contact.html" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline text-sm">
+                            Get Checklist
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-[#F3BF00] to-yellow-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+                Ready to Write Your Success Story?
+            </h2>
+            <p class="text-lg text-black/80 mb-8">
+                Join the businesses that have transformed their operations with our AI automation and integration solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-black text-[#F3BF00] font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                    Book Your Free Consultation
+                </a>
+                <a href="index.html#services" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="services/ai-automation.html" class="hover:text-[#F3BF00] transition">AI & Workflow Automation</a></li>
+                        <li><a href="services/integration-api.html" class="hover:text-[#F3BF00] transition">System Integration & API</a></li>
+                        <li><a href="services/web-cms.html" class="hover:text-[#F3BF00] transition">Web & CMS Modernization</a></li>
+                        <li><a href="services/digital-transformation.html" class="hover:text-[#F3BF00] transition">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Get Started</h4>
+                    <a href="contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-neutral-800 pt-8 text-center text-neutral-400">
+                <p>&copy; 2025 Koodi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Koodi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-neutral-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="index.html" class="text-2xl md:text-3xl font-bold text-black">
+                    <span class="text-[#F3BF00]">Koodi</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-neutral-700 hover:text-black font-medium">Home</a>
+                    <div class="relative group">
+                        <button class="text-neutral-700 hover:text-black font-medium">Services</button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="services/ai-automation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-t-xl">AI & Workflow Automation</a>
+                            <a href="services/integration-api.html" class="block px-6 py-3 hover:bg-neutral-50">System Integration & API</a>
+                            <a href="services/web-cms.html" class="block px-6 py-3 hover:bg-neutral-50">Web & CMS Modernization</a>
+                            <a href="services/digital-transformation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-b-xl">Digital Transformation</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
+                    <a href="contact.html" class="text-black font-semibold border-b-2 border-[#F3BF00]">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+        <div class="flex justify-between items-center p-4 border-b">
+            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <button id="close-menu-button" class="p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="index.html" class="block text-lg py-2">Home</a>
+            <div class="space-y-2">
+                <p class="text-sm font-semibold text-neutral-500 uppercase">Services</p>
+                <a href="services/ai-automation.html" class="block text-lg py-2 pl-4">AI & Workflow Automation</a>
+                <a href="services/integration-api.html" class="block text-lg py-2 pl-4">System Integration & API</a>
+                <a href="services/web-cms.html" class="block text-lg py-2 pl-4">Web & CMS Modernization</a>
+                <a href="services/digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
+            </div>
+            <a href="blog.html" class="block text-lg py-2">Case Studies</a>
+            <a href="contact.html" class="block text-lg font-semibold text-black py-2">Contact</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                    Let's Build Something Great Together
+                </h1>
+                <p class="text-lg md:text-xl text-neutral-700 mb-8">
+                    Ready to transform your operations with AI automation? Book a free consultation and discover how we can help your business work smarter.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg fade-in">
+                    <h2 class="text-3xl font-bold text-black mb-2">Get in Touch</h2>
+                    <p class="text-neutral-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-semibold text-black mb-2">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required 
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-semibold text-black mb-2">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required 
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-black mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-black mb-2">Company</label>
+                            <input type="text" id="company" name="company" 
+                                class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-semibold text-black mb-2">I'm interested in... *</label>
+                            <select id="service" name="service" required 
+                                class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition bg-white">
+                                <option value="">Select a service</option>
+                                <option value="ai-automation">AI & Workflow Automation</option>
+                                <option value="integration">System Integration & API Engineering</option>
+                                <option value="web-cms">Web & CMS Modernization</option>
+                                <option value="digital-transformation">Digital Transformation Advisory</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-black mb-2">Tell us about your project *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                class="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 focus:border-[#F3BF00] focus:outline-none transition resize-none"
+                                placeholder="Describe your current challenges, goals, and what you're looking to achieve..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:brightness-110 transition">
+                            Send Message
+                        </button>
+                        
+                        <p class="text-sm text-neutral-500 text-center">
+                            By submitting this form, you agree to our privacy policy.
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-br from-[#F3BF00]/10 to-yellow-100 rounded-3xl p-8 shadow-md fade-in">
+                        <h3 class="text-2xl font-bold text-black mb-6">Why Work With Koodi?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-[#F3BF00] mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-neutral-700"><strong>20+ years</strong> of combined automation and integration experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-[#F3BF00] mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-neutral-700"><strong>Proven results</strong> across US, EU, and Asia markets</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-[#F3BF00] mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-neutral-700"><strong>End-to-end service</strong> from strategy to implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-[#F3BF00] mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-neutral-700"><strong>Applied AI expertise</strong> focused on real business outcomes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-[#F3BF00] mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-neutral-700"><strong>Scalable solutions</strong> that grow with your business</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl p-8 shadow-md fade-in">
+                        <h3 class="text-2xl font-bold text-black mb-6">What Happens Next?</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#F3BF00] rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-xl font-bold text-black">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-1">We Review Your Request</h4>
+                                    <p class="text-neutral-600">Our team reviews your submission and prepares for your consultation.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#F3BF00] rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-xl font-bold text-black">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-1">Initial Consultation</h4>
+                                    <p class="text-neutral-600">We schedule a free 30-45 minute call to understand your needs and challenges.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#F3BF00] rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-xl font-bold text-black">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-1">Custom Proposal</h4>
+                                    <p class="text-neutral-600">We deliver a tailored proposal with timeline, scope, and ROI projections.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-[#F3BF00] rounded-xl flex items-center justify-center mr-4">
+                                    <span class="text-xl font-bold text-black">4</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-1">Project Kickoff</h4>
+                                    <p class="text-neutral-600">Once approved, we begin transforming your operations with AI and automation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                        <h3 class="text-xl font-bold text-black mb-4">Prefer Email?</h3>
+                        <p class="text-neutral-700 mb-4">
+                            Reach out directly at <a href="mailto:hello@koodi.ai" class="text-[#F3BF00] font-semibold hover:underline">hello@koodi.ai</a>
+                        </p>
+                        <p class="text-neutral-600 text-sm">
+                            We typically respond within 24 hours on business days.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Section -->
+    <section class="py-16 bg-gradient-to-br from-neutral-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+                    Trusted by Teams Around the World
+                </h2>
+                <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+                    From startups to enterprises, businesses trust Koodi to deliver reliable AI automation and integration solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
+                    <div class="text-4xl font-bold text-[#F3BF00] mb-2">20+</div>
+                    <p class="text-neutral-700">Years Combined Experience</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
+                    <div class="text-4xl font-bold text-[#F3BF00] mb-2">3</div>
+                    <p class="text-neutral-700">Continents Served</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
+                    <div class="text-4xl font-bold text-[#F3BF00] mb-2">100%</div>
+                    <p class="text-neutral-700">Client Satisfaction Focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="services/ai-automation.html" class="hover:text-[#F3BF00] transition">AI & Workflow Automation</a></li>
+                        <li><a href="services/integration-api.html" class="hover:text-[#F3BF00] transition">System Integration & API</a></li>
+                        <li><a href="services/web-cms.html" class="hover:text-[#F3BF00] transition">Web & CMS Modernization</a></li>
+                        <li><a href="services/digital-transformation.html" class="hover:text-[#F3BF00] transition">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li><a href="blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Get Started</h4>
+                    <a href="contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-neutral-800 pt-8 text-center text-neutral-400">
+                <p>&copy; 2025 Koodi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
