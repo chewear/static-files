@@ -22,8 +22,8 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
-                <a href="../index.html" class="text-2xl md:text-3xl font-bold text-black">
-                    <span class="text-[#F3BF00]">Koodi</span>
+                <a href="../index.html" class="flex items-center">
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-10 md:h-12">
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -38,6 +38,7 @@
                         </div>
                     </div>
                     <a href="../blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
+                    <a href="../faq.html" class="text-neutral-700 hover:text-black font-medium">FAQ</a>
                     <a href="../contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
                     <a href="../contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
                 </div>
@@ -54,7 +55,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
         <div class="flex justify-between items-center p-4 border-b">
-            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <img src="../assets/images/logo.png" alt="Koodi" class="h-10">
             <button id="close-menu-button" class="p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -71,6 +72,7 @@
                 <a href="digital-transformation.html" class="block text-lg font-semibold text-black py-2 pl-4">Digital Transformation</a>
             </div>
             <a href="../blog.html" class="block text-lg py-2">Case Studies</a>
+            <a href="../faq.html" class="block text-lg py-2">FAQ</a>
             <a href="../contact.html" class="block text-lg py-2">Contact</a>
             <a href="../contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
         </div>
@@ -114,37 +116,43 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <!-- Card 1: Unclear automation impact -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
                     <div class="text-3xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Unclear automation impact</h3>
+                    <h3 class="text-xl font-bold text-black mb-3">Unclear Automation Impact</h3>
                     <p class="text-neutral-700">Hard to measure which processes truly benefit from technology.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <!-- Card 2: Reactive decisions on data -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
                     <div class="text-3xl mb-4">🎯</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Reactive decisions on data</h3>
+                    <h3 class="text-xl font-bold text-black mb-3">Reactive Decisions on Data</h3>
                     <p class="text-neutral-700">Systems lack a coherent framework for consistent choices.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <!-- Card 3: Disconnected workflows -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
                     <div class="text-3xl mb-4">🔗</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Disconnected workflows</h3>
+                    <h3 class="text-xl font-bold text-black mb-3">Disconnected Workflows</h3>
                     <p class="text-neutral-700">Teams lose hours on repetitive manual work between systems.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <!-- Card 4: No future-proof plan -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
                     <div class="text-3xl mb-4">📈</div>
-                    <h3 class="text-xl font-bold text-black mb-3">No future-proof plan</h3>
+                    <h3 class="text-xl font-bold text-black mb-3">No Future-Proof Plan</h3>
                     <p class="text-neutral-700">Scaling your business strains tools that weren't built to grow together.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <!-- Card 5: Tools underleveraged -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
                     <div class="text-3xl mb-4">⚙️</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Tools underleveraged</h3>
+                    <h3 class="text-xl font-bold text-black mb-3">Tools Underleveraged</h3>
                     <p class="text-neutral-700">Features you already pay for remain unused or misaligned.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-[#F3BF00]/20 to-yellow-100 rounded-3xl p-8 shadow-md fade-in flex items-center">
+                <!-- Highlight Card -->
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-[#F3BF00]/50 flex items-center">
                     <div>
                         <p class="text-lg font-semibold text-black">Our advisory services help you align technology, strategy, and operations.</p>
                     </div>
@@ -166,9 +174,10 @@
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Card 1: CTO-as-a-Service -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-sky-400 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                     </div>
@@ -178,23 +187,24 @@
                     </p>
                     <ul class="space-y-2 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Strategic guidance for technology choices</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Roadmap planning for scalable architecture</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Vendor alignment and tool selection</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Card 2: Digital Process Audit & AI Roadmap -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-violet-400 to-purple-400 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                         </svg>
                     </div>
@@ -204,23 +214,24 @@
                     </p>
                     <ul class="space-y-2 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Operational modernization plan</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>ROI projections for improvements</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Execution roadmap from analysis to implementation</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Card 3: Training & Enablement -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                         </svg>
                     </div>
@@ -230,15 +241,15 @@
                     </p>
                     <ul class="space-y-2 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Practical adoption of new tools</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Innovation mindset and data-driven decisions</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
                             <span>Long-term scalability for teams and systems</span>
                         </li>
                     </ul>
@@ -259,150 +270,145 @@
                 </p>
             </div>
             
-            <div class="space-y-6">
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">1</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-black mb-2">Discovery & Audit</h3>
-                            <p class="text-neutral-700 mb-3">
+            <div class="relative max-w-5xl mx-auto" style="perspective: 1500px;">
+                <!-- Card 1: Discovery & Audit -->
+                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(-1deg); transform-origin: center;">
+                    <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.15)] border-2 border-rose-100 relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-8xl font-bold text-rose-100 opacity-50">1</div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Discovery & Audit</h3>
+                            <p class="text-neutral-700 text-lg mb-4">
                                 We evaluate your current systems, workflows, and business goals to determine where digital improvements will have the greatest impact.
                             </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Identify inefficiencies</p>
-                                    <p class="text-neutral-600">Spot workflows that slow your team</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Review tools</p>
-                                    <p class="text-neutral-600">Check platform performance</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Align objectives</p>
-                                    <p class="text-neutral-600">Ensure technology supports growth</p>
-                                </div>
-                            </div>
+                            <ul class="space-y-2 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span class="text-rose-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Identify inefficiencies</strong> – Spot workflows that slow your team.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-rose-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Review tools</strong> – Check how your CRM, ERP, and other platforms perform.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-rose-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Align objectives</strong> – Ensure technology supports your growth strategy.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">2</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-black mb-2">Gap Analysis</h3>
-                            <p class="text-neutral-700 mb-3">
+                <!-- Card 2: Gap Analysis -->
+                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(1.5deg); transform-origin: center;">
+                    <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-[0_12px_45px_rgba(0,0,0,0.18)] border-2 border-sky-100 relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-8xl font-bold text-sky-100 opacity-50">2</div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Gap Analysis</h3>
+                            <p class="text-neutral-700 text-lg mb-4">
                                 We pinpoint opportunities where automation, AI, and integration can deliver real business impact.
                             </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Uncover bottlenecks</p>
-                                    <p class="text-neutral-600">Find where manual work creates delays</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Spot underused tools</p>
-                                    <p class="text-neutral-600">Identify software your team underutilizes</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Prioritize improvements</p>
-                                    <p class="text-neutral-600">Focus on actions that maximize ROI</p>
-                                </div>
-                            </div>
+                            <ul class="space-y-2 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span class="text-sky-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Uncover bottlenecks</strong> – Find where manual work creates delays.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-sky-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Spot underused tools</strong> – Identify software your team already pays for but underutilizes.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-sky-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Prioritize improvements</strong> – Focus on actions that maximize ROI.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">3</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-black mb-2">Transformation Roadmap</h3>
-                            <p class="text-neutral-700 mb-3">
+                <!-- Card 3: Transformation Roadmap -->
+                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(-1.5deg); transform-origin: center;">
+                    <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-[0_14px_50px_rgba(0,0,0,0.2)] border-2 border-violet-100 relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-8xl font-bold text-violet-100 opacity-50">3</div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Transformation Roadmap</h3>
+                            <p class="text-neutral-700 text-lg mb-4">
                                 We create a clear, actionable plan that combines technology, processes, and people to achieve your goals.
                             </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Strategic sequencing</p>
-                                    <p class="text-neutral-600">Decide which systems to upgrade first</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Integration plan</p>
-                                    <p class="text-neutral-600">Connect CRMs, payments, and operations</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Scalability focus</p>
-                                    <p class="text-neutral-600">Build systems that grow with you</p>
-                                </div>
-                            </div>
+                            <ul class="space-y-2 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span class="text-violet-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Strategic sequencing</strong> – Decide which systems to upgrade first.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-violet-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Integration plan</strong> – Connect tools like CRMs, payment systems, and operations platforms.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-violet-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Scalability focus</strong> – Build systems that grow as your business expands.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">4</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-black mb-2">Implementation Support</h3>
-                            <p class="text-neutral-700 mb-3">
+                <!-- Card 4: Implementation Support -->
+                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(1deg); transform-origin: center;">
+                    <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-[0_16px_55px_rgba(0,0,0,0.22)] border-2 border-emerald-100 relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-8xl font-bold text-emerald-100 opacity-50">4</div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Implementation Support</h3>
+                            <p class="text-neutral-700 text-lg mb-4">
                                 We guide your team through the rollout and integration of new systems.
                             </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Seamless deployment</p>
-                                    <p class="text-neutral-600">Minimize disruption during transitions</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Custom integrations</p>
-                                    <p class="text-neutral-600">Connect legacy and modern platforms</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Ongoing oversight</p>
-                                    <p class="text-neutral-600">Ensure changes perform as intended</p>
-                                </div>
-                            </div>
+                            <ul class="space-y-2 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span class="text-emerald-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Seamless deployment</strong> – Minimize disruption during transitions.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-emerald-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Custom integrations</strong> – Connect legacy and modern platforms efficiently.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-emerald-500 mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Ongoing oversight</strong> – Ensure changes perform as intended.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">5</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-black mb-2">Training & Optimization</h3>
-                            <p class="text-neutral-700 mb-3">
+                <!-- Card 5: Training & Optimization -->
+                <div class="relative transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(-0.5deg); transform-origin: center;">
+                    <div class="bg-gradient-to-br from-[#F3BF00] via-[#FFD700] to-[#FFA500] rounded-3xl p-8 shadow-[0_18px_60px_rgba(243,191,0,0.4)] border-2 border-[#F3BF00] relative overflow-hidden">
+                        <div class="absolute top-4 right-4 text-8xl font-bold text-black opacity-10">5</div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Training & Optimization</h3>
+                            <p class="text-black text-lg mb-4">
                                 We upskill your team to use the systems confidently and sustainably.
                             </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Hands-on training</p>
-                                    <p class="text-neutral-600">Help teams adopt AI workflows</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Performance tracking</p>
-                                    <p class="text-neutral-600">Monitor results and optimize</p>
-                                </div>
-                                <div class="bg-white rounded-xl p-4">
-                                    <p class="font-semibold text-black mb-1">Culture of innovation</p>
-                                    <p class="text-neutral-600">Build lasting adoption</p>
-                                </div>
-                            </div>
+                            <ul class="space-y-2 text-black">
+                                <li class="flex items-start">
+                                    <span class="text-black mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Hands-on training</strong> – Help teams adopt AI-powered and automated workflows.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-black mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Performance tracking</strong> – Monitor results and optimize for efficiency.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-black mr-2 font-bold text-lg">→</span>
+                                    <span><strong>Culture of innovation</strong> – Build lasting adoption and continuous improvement.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-8 text-center">
-                <p class="text-lg text-neutral-700 italic">We don't just hand you a report. We walk with you every step of the digital transformation journey.</p>
+            <div class="mt-12 text-center">
+                <p class="text-lg text-neutral-700 italic fade-in">We don't just hand you a report. We walk with you every step of the digital transformation journey.</p>
             </div>
         </div>
     </section>
@@ -420,28 +426,48 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-black mb-4">Creative & Marketing Agencies</h3>
                     <p class="text-neutral-700">
                         We help agencies streamline project workflows, centralize client data, and automate reporting. Your team delivers campaigns faster, reduces manual coordination, and gains visibility into every project milestone.
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-black mb-4">E-commerce and DTC Brands</h3>
                     <p class="text-neutral-700">
                         We simplify order management, inventory tracking, and customer data across multiple platforms. Automating repetitive tasks enables your team to focus on growth, while integrated systems reduce errors.
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-black mb-4">Scaling Startups</h3>
                     <p class="text-neutral-700">
                         Our fractional CTO service aligns technology with your growth strategy. We design system architecture, implement scalable workflows, and ensure your tech stack supports rapid expansion without operational bottlenecks.
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-2xl font-bold text-black mb-4">Enterprises and Established Organizations</h3>
                     <p class="text-neutral-700">
                         We modernize operations without disrupting your current business. From integrating legacy systems to automating repetitive processes, we enhance efficiency while keeping teams aligned and operations running smoothly.
@@ -451,8 +477,84 @@
         </div>
     </section>
     
-    <!-- Why Work With Us Section -->
+    <!-- Case Studies Section -->
     <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                    Turning Technology Into Results
+                </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    Our advisory transforms fragmented systems into actionable insights. Teams gain clarity, efficiency, and the ability to make confident, data-driven decisions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Marketing Agency Transformation</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Case study details coming soon. See how we helped streamline operations and improve client delivery times.
+                    </p>
+                    <p class="text-sm text-sky-600 font-semibold">Results: 40% time saved on reporting</p>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">E-commerce Platform Scale-Up</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Case study details coming soon. Learn how we integrated systems to support rapid growth.
+                    </p>
+                    <p class="text-sm text-violet-600 font-semibold">Results: 3x order processing capacity</p>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Enterprise System Integration</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Case study details coming soon. Discover how we unified legacy and modern systems.
+                    </p>
+                    <p class="text-sm text-emerald-600 font-semibold">Results: Real-time data visibility</p>
+                </div>
+            </div>
+            
+            <!-- CTA Container -->
+            <div class="mt-12 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-10 md:p-12 shadow-lg border-2 border-[#F3BF00]/50 fade-in">
+                <div class="text-center">
+                    <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Turn Your Technology Into a Strategic Advantage</h3>
+                    <p class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
+                        Get a clear roadmap that aligns your systems, processes, and team for sustainable growth and operational excellence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                            Book Your Transformation Strategy Session
+                        </a>
+                        <a href="../contact.html" class="inline-block bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:shadow-xl transition">
+                            Unlock Your AI-Ready Roadmap Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Work With Us Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
@@ -464,96 +566,63 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold text-black mb-3">Proven execution across strategy and engineering</h3>
                     <p class="text-neutral-700">
                         Every roadmap we design is grounded in strategy and technical execution, giving you practical results you can implement immediately without relying on external teams.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold text-black mb-3">Full-stack integration experience</h3>
                     <p class="text-neutral-700">
                         From CRMs to Laravel and AI tools, we ensure your systems communicate efficiently and securely.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold text-black mb-3">Deep automation and API knowledge</h3>
                     <p class="text-neutral-700">
                         Reduce repetitive work, prevent errors, and gain real-time operational insight with our automation expertise.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold text-black mb-3">Results-oriented recommendations</h3>
                     <p class="text-neutral-700">
                         Our solutions are designed to generate measurable operational improvements that drive real business value.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in col-span-1 md:col-span-2">
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100 col-span-1 md:col-span-2">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold text-black mb-3">Flexible partnership options</h3>
                     <p class="text-neutral-700">
                         Choose from audits, ongoing advisory, or fractional CTO support tailored to your growth stage.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-                    Your Questions, Answered
-                </h2>
-                <p class="text-lg text-neutral-700">
-                    We know digital transformation raises questions. Our goal is to make every step transparent and actionable so you feel confident about moving forward.
-                </p>
-            </div>
-            
-            <div class="space-y-6">
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">What's the difference between advisory and implementation?</h3>
-                    <p class="text-neutral-700">
-                        Advisory defines the strategy, roadmap, and priorities for your digital transformation. Implementation executes that plan, connecting your tools, automating workflows, and training your team. You can choose advisory-only services or combine them with hands-on support.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">Do you work with existing tech stacks or recommend new ones?</h3>
-                    <p class="text-neutral-700">
-                        We evaluate your current tools first. Our team identifies gaps, opportunities for integration, and potential for automation. If upgrades or new platforms provide better efficiency or AI capabilities, we make clear, actionable recommendations.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">How long does a transformation roadmap project take?</h3>
-                    <p class="text-neutral-700">
-                        Roadmap projects typically take 4 to 8 weeks, depending on complexity. This includes discovery, audits, gap analysis, and detailed recommendations for your operations, workflows, and AI integrations.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">Can you help our team implement the roadmap afterward?</h3>
-                    <p class="text-neutral-700">
-                        Yes. We provide full implementation support or fractional CTO services to ensure your systems are integrated and your team is confident using them.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">What industries do you specialize in?</h3>
-                    <p class="text-neutral-700">
-                        We work with SMEs, service-based businesses, marketing and creative agencies, e-commerce brands, and scaling startups. Our expertise spans any organization seeking automation-ready, AI-powered operations.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold text-black mb-2">Do you offer ongoing CTO or retainer advisory support?</h3>
-                    <p class="text-neutral-700">
-                        Yes. We offer flexible engagement models, including ongoing advisory, fractional CTO support, or project-based consulting, tailored to your team's needs and growth stage.
                     </p>
                 </div>
             </div>
@@ -588,7 +657,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-12 mb-4">
                     <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
                 </div>
                 <div>
@@ -604,6 +673,7 @@
                     <h4 class="font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-neutral-400">
                         <li><a href="../blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="../faq.html" class="hover:text-[#F3BF00] transition">FAQ</a></li>
                         <li><a href="../contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
                     </ul>
                 </div>

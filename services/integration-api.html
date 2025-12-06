@@ -22,8 +22,8 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
-                <a href="../index.html" class="text-2xl md:text-3xl font-bold text-black">
-                    <span class="text-[#F3BF00]">Koodi</span>
+                <a href="../index.html" class="flex items-center">
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-10 md:h-12">
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -38,6 +38,7 @@
                         </div>
                     </div>
                     <a href="../blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
+                    <a href="../faq.html" class="text-neutral-700 hover:text-black font-medium">FAQ</a>
                     <a href="../contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
                     <a href="../contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
                 </div>
@@ -54,7 +55,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
         <div class="flex justify-between items-center p-4 border-b">
-            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <img src="../assets/images/logo.png" alt="Koodi" class="h-10">
             <button id="close-menu-button" class="p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -71,6 +72,7 @@
                 <a href="digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
             </div>
             <a href="../blog.html" class="block text-lg py-2">Case Studies</a>
+            <a href="../faq.html" class="block text-lg py-2">FAQ</a>
             <a href="../contact.html" class="block text-lg py-2">Contact</a>
             <a href="../contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
         </div>
@@ -110,40 +112,46 @@
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🔗</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Data silos across platforms</h3>
-                    <p class="text-neutral-700">Customer information lives in multiple places with no single source of truth.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">✏️</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Manual data entry and duplication</h3>
-                    <p class="text-neutral-700">Teams waste hours copying information between CRMs, spreadsheets, and project tools.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">⚠️</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Errors from inconsistent data</h3>
-                    <p class="text-neutral-700">Copy-paste mistakes and outdated information lead to costly errors and confusion.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🔍</div>
-                    <h3 class="text-xl font-bold text-black mb-3">No unified view of operations</h3>
-                    <p class="text-neutral-700">Leaders lack real-time insights because data is scattered across disconnected systems.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1: Manual updates steal hours -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
                     <div class="text-3xl mb-4">⏰</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Delayed handoffs and workflows</h3>
-                    <p class="text-neutral-700">Manual processes between systems slow down every project and client interaction.</p>
+                    <h3 class="text-xl font-bold text-black mb-3">Manual Updates Steal Hours</h3>
+                    <p class="text-neutral-700">Employees spend too much time copying and reconciling data across disconnected platforms.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-[#F3BF00]/20 to-yellow-100 rounded-3xl p-8 shadow-md fade-in flex items-center">
-                    <div>
-                        <p class="text-lg font-semibold text-black">Our integration solutions eliminate these bottlenecks and create a unified, efficient workspace.</p>
+                <!-- Card 2: Ad hoc solutions reduce reliability -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="text-3xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Ad Hoc Solutions Reduce Reliability</h3>
+                    <p class="text-neutral-700">Teams patch workflows with workarounds instead of executing seamless, dependable processes.</p>
+                </div>
+                
+                <!-- Card 3: Inconsistent information slows decisions -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="text-3xl mb-4">⚠️</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Inconsistent Information Slows Decisions</h3>
+                    <p class="text-neutral-700">Reports often disagree across systems, creating confusion and delaying critical business decisions.</p>
+                </div>
+                
+                <!-- Card 4: No unified view of performance -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <div class="text-3xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-black mb-3">No Unified View of Performance</h3>
+                    <p class="text-neutral-700">Limited visibility keeps leadership and teams from acting quickly on opportunities or addressing issues.</p>
+                </div>
+                
+                <!-- Card 5: Tools fail to scale -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="text-3xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Tools Fail to Scale</h3>
+                    <p class="text-neutral-700">A lack of integration can lead to system crashes and errors as your business expands and demands increase.</p>
+                </div>
+                
+                <!-- Highlight Card -->
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-[#F3BF00]/50">
+                    <div class="text-center">
+                        <p class="text-lg font-bold text-black">Your CRM, ERP, website, and payment systems should work together seamlessly. Most businesses operate with disconnected tools, which slow work, create duplicate data, and lead to missed opportunities.</p>
                     </div>
                 </div>
             </div>
@@ -162,161 +170,105 @@
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Custom API Development</h3>
-                    <p class="text-neutral-700 mb-4">
-                        We build secure, scalable APIs that connect your proprietary systems with third-party platforms. Your data flows automatically without manual intervention.
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Solution 1: System Integration & API Engineering -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">System Integration & API Engineering</h3>
+                    <p class="text-neutral-700 mb-6">
+                        We link your CRM, ERP, booking platforms, and payment systems to create one synchronized workflow.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>RESTful and GraphQL API design</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Fewer errors</strong> – Automated data flow reduces mistakes from manual entry</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Webhook implementation for real-time updates</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Better visibility</strong> – Your team gains a comprehensive view of all operations</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Authentication and security protocols</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Faster decisions</strong> – Real-time data enables faster reporting and informed strategic choices</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">CRM & ERP Integration</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Connect Salesforce, HubSpot, Microsoft Dynamics, NetSuite, SAP, and other enterprise systems. Sync customer data, orders, and operations in real time.
+                <!-- Solution 2: Custom API Connectors -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Custom API Connectors (Laravel / Drupal)</h3>
+                    <p class="text-neutral-700 mb-6">
+                        We build connectors for systems that lack native integrations, ensuring secure real-time sync.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Bi-directional data synchronization</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Flexibility</strong> – Connect any legacy or modern system without the need for replacement</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated customer record updates</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Reliability</strong> – Keep data consistent across platforms</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Cross-platform reporting and analytics</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Seamless integration</strong> – Maintain workflows without disrupting your current setup</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Payment & E-commerce Integration</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Integrate Stripe, PayPal, Square, Shopify, WooCommerce, and other payment systems with your CRM and accounting tools.
+                <!-- Solution 3: Cloud Hosting & Infrastructure Setup -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Cloud Hosting & Infrastructure Setup</h3>
+                    <p class="text-neutral-700 mb-6">
+                        We configure and manage cloud environments, encompassing hosting and monitoring, as well as automated backups and CI/CD pipelines.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated invoice and payment tracking</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Peace of mind</strong> – Your infrastructure is stable and fully managed</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Order fulfillment automation</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Scalability</strong> – Systems grow as your business scales</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Customer purchase history synchronization</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Uptime reliability</strong> – Maintain availability even during peak traffic</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Booking & Scheduling Integration</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Connect Calendly, Acuity, Google Calendar, and other scheduling tools with your CRM, project management, and communication platforms.
+                <!-- Solution 4: DevOps & Continuous Delivery -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">DevOps & Continuous Delivery</h3>
+                    <p class="text-neutral-700 mb-6">
+                        We implement CI/CD pipelines and automated deployment processes to enable faster and safer updates.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automatic CRM updates from bookings</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Reduced downtime</strong> – Updates occur without interrupting business operations</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Team calendar synchronization</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Rapid iteration</strong> – Launch new features faster</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated pre-meeting workflows</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Stable environments</strong> – Development and production systems stay aligned and secure</span>
                         </li>
                     </ul>
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Communication Platform Integration</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Integrate Slack, Microsoft Teams, email, and SMS platforms with your business systems for unified communication.
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-12 text-center fade-in">
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg border-2 border-[#F3BF00]/50">
+                    <p class="text-lg font-semibold text-black mb-6">
+                        Ready to unify your systems and eliminate data silos?
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated notifications and alerts</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>CRM updates from conversations</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Cross-platform message routing</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Database & Data Warehouse Integration</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Connect databases, data warehouses, and business intelligence tools for comprehensive analytics and reporting.
-                    </p>
-                    <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>ETL pipeline development</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Real-time data synchronization</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Business intelligence dashboard integration</span>
-                        </li>
-                    </ul>
+                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                        Book Your Free Systems Audit Today
+                    </a>
                 </div>
             </div>
         </div>
@@ -327,176 +279,315 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Our Integration Process
+                    Your Blueprint for Reliable, Automated Operations
                 </h2>
                 <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    We follow a structured approach to ensure reliable, secure integrations.
+                    We guide your business through a structured, results-driven process that connects your tools, automates workflows, and boosts operational efficiency. Our approach ensures your systems are dependable now and ready for growth tomorrow.
                 </p>
             </div>
             
-            <div class="space-y-6">
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">1</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">System Audit & Mapping</h3>
-                            <p class="text-neutral-700">
-                                We inventory your current tools, identify data flows, and map integration requirements. You'll receive a detailed integration roadmap with timelines and priorities.
-                            </p>
-                        </div>
+            <div class="relative max-w-5xl mx-auto space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12 perspective-1000">
+                <!-- Step 1: Discovery & Audit -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-1deg] bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-rose-100 fade-in">
+                    <div class="absolute inset-0 bg-rose-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-rose-200 opacity-50">1</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Discovery & Audit</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Identify Inefficiencies</p>
+                        <p class="text-neutral-700 mb-3">
+                            We analyze your tools, workflows, and pain points to identify where inefficiencies are slowing your business.
+                        </p>
+                        <ul class="text-sm text-neutral-600 space-y-1">
+                            <li>• Spot data silos</li>
+                            <li>• Uncover repetitive tasks</li>
+                            <li>• Pinpoint automation opportunities</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">2</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Architecture Design</h3>
-                            <p class="text-neutral-700">
-                                Our engineers design the integration architecture, selecting the right API patterns, data models, and security protocols for your needs.
-                            </p>
-                        </div>
+
+                <!-- Step 2: Blueprint Design -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[1.5deg] bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-sky-100 fade-in">
+                    <div class="absolute inset-0 bg-sky-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-sky-200 opacity-50">2</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Blueprint Design</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Create Integration Plan</p>
+                        <p class="text-neutral-700 mb-3">
+                            We create a clear integration plan that aligns with your operational goals.
+                        </p>
+                        <ul class="text-sm text-neutral-600 space-y-1">
+                            <li>• Workflow mapping</li>
+                            <li>• API strategy</li>
+                            <li>• Scalability planning</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">3</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Development & Testing</h3>
-                            <p class="text-neutral-700">
-                                We build custom connectors, APIs, and middleware, then rigorously test in a staging environment before deployment.
-                            </p>
-                        </div>
+
+                <!-- Step 3: Integration & Engineering -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-1.5deg] bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-violet-100 fade-in">
+                    <div class="absolute inset-0 bg-violet-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-violet-200 opacity-50">3</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Integration & Engineering</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Build & Automate</p>
+                        <p class="text-neutral-700 mb-3">
+                            We build secure connections and automate workflows across your systems.
+                        </p>
+                        <ul class="text-sm text-neutral-600 space-y-1">
+                            <li>• Platform syncing</li>
+                            <li>• Custom connectors</li>
+                            <li>• Automation rules</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">4</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Deployment & Migration</h3>
-                            <p class="text-neutral-700">
-                                We deploy integrations with minimal disruption, migrate existing data if needed, and ensure all systems communicate correctly.
-                            </p>
-                        </div>
+
+                <!-- Step 4: Testing & Optimization -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[0.5deg] bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-emerald-100 fade-in">
+                    <div class="absolute inset-0 bg-emerald-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-emerald-200 opacity-50">4</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Testing & Optimization</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Validate Performance</p>
+                        <p class="text-neutral-700 mb-3">
+                            We validate every connection to ensure speed, security, and reliability.
+                        </p>
+                        <ul class="text-sm text-neutral-600 space-y-1">
+                            <li>• Data integrity checks</li>
+                            <li>• Automation testing</li>
+                            <li>• Performance optimization</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">5</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Monitoring & Support</h3>
-                            <p class="text-neutral-700">
-                                Post-launch, we monitor integration health, handle API updates, and provide ongoing support to ensure reliability.
-                            </p>
-                        </div>
+
+                <!-- Step 5: Monitoring & Maintenance -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-0.5deg] bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-[#F3BF00]/50 fade-in">
+                    <div class="absolute inset-0 bg-[#F3BF00]/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-yellow-800 opacity-50">5</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Monitoring & Maintenance</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Continuous Support</p>
+                        <p class="text-neutral-700 mb-3">
+                            We keep your systems running smoothly with proactive support and updates.
+                        </p>
+                        <ul class="text-sm text-neutral-600 space-y-1">
+                            <li>• Continuous monitoring</li>
+                            <li>• Maintenance & updates</li>
+                            <li>• Issue resolution</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Technical Capabilities Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Technical Expertise You Can Trust
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    Our team has deep experience with modern integration technologies and platforms.
-                </p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">REST APIs</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">GraphQL</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Webhooks</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">OAuth 2.0</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Zapier</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Make (Integromat)</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Node.js</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Python</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Laravel</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">AWS Lambda</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Google Cloud</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Microsoft Azure</p>
-                </div>
+            <!-- CTA -->
+            <div class="mt-16 text-center fade-in">
+                <a href="../contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:brightness-110 transition">
+                    Book My Free Systems Audit
+                </a>
             </div>
         </div>
     </section>
     
     <!-- Use Cases Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                    See How Connected Tools Transform Your Business
+                </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    We help businesses integrate their tools, automate repetitive workflows, and unlock operational performance across various industries. Our integrations save time, reduce errors, and give you a clear picture of your business.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service-Based Operations -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Service-Based Operations</h3>
+                    <p class="text-neutral-700">
+                        Booking platforms, payment systems, and CRMs sync seamlessly. Manual entry disappears, and staff can focus on client satisfaction.
+                    </p>
+                </div>
+                
+                <!-- Online Retail -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Online Retail</h3>
+                    <p class="text-neutral-700">
+                        E-commerce platforms and ERPs integrate automatically. Inventory and order data flow in real time, preventing stock errors and delayed shipments.
+                    </p>
+                </div>
+                
+                <!-- Marketing and Creative Agencies -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Marketing and Creative Agencies</h3>
+                    <p class="text-neutral-700">
+                        Project management and analytics tools facilitate seamless collaboration across teams. Every member accesses the latest updates, reducing miscommunication and missed deadlines.
+                    </p>
+                </div>
+                
+                <!-- Large Enterprises -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Large Enterprises</h3>
+                    <p class="text-neutral-700">
+                        Multiple departmental databases merge into a single intelligent dashboard. Leadership can monitor KPIs, financials, and operational performance at a glance.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Tagline -->
+            <div class="mt-12 text-center fade-in">
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg border-2 border-[#F3BF00]/50 max-w-4xl mx-auto">
+                    <p class="text-xl font-bold text-black mb-6">
+                        No matter how complex your tool stack is, if it has an API, we can make it talk - unlocking automation and reliable workflows for your business.
+                    </p>
+                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                        Book Your Systems Audit Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Studies Section -->
     <section class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Integration Solutions for Every Industry
+                    Smarter Systems, Measurable Results
                 </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    Our system integrations go beyond connecting APIs. Each solution we delivered have resulted in measurable improvements, saving time, reducing errors, and improving visibility across departments.
+                </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">Marketing Agencies</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Case Study 1 -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="bg-sky-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        Service Business
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        Service Company Eliminates 20+ Hours of Manual Data Entry Weekly
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Integrated booking system with CRM and payment gateway, creating seamless workflow that saves time and reduces errors.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="bg-violet-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        E-commerce
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        Retail Brand Achieves 99.9% Inventory Accuracy with Real-Time Sync
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Connected Shopify store with ERP and logistics systems, eliminating stock discrepancies and order delays.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="bg-emerald-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        Agency
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        Marketing Agency Cuts Reporting Time by 75% with Unified Dashboard
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Integrated analytics platforms with project management tools and CRM for automated client reporting and better visibility.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-12 text-center fade-in">
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg border-2 border-[#F3BF00]/50">
+                    <p class="text-lg font-semibold text-black mb-6">
+                        See how system integration can deliver measurable improvements for your business operations.
+                    </p>
+                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                        Schedule Your Systems Audit Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Work With Us Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                    Your Partner for Scalable, Automation-Ready Systems
+                </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    Disconnected tools slow growth. Koodi connects your systems, automates workflows, and ensures secure data flow across platforms. We make your operations predictable, efficient, and scalable so your team can focus on results, not manual processes.
+                </p>
+            </div>
+            
+            <h3 class="text-2xl md:text-3xl font-bold text-black text-center mb-10 fade-in">Why Do Businesses Choose Koodi?</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1: Cross-Platform Integration Expertise -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h4 class="text-xl font-bold text-black mb-4">Cross-Platform Integration Expertise</h4>
                     <p class="text-neutral-700">
-                        Connect your CRM with project management tools, analytics platforms, and client reporting systems for seamless campaign execution and tracking.
+                        CRMs, ERPs, booking tools, and payment systems all sync seamlessly, providing you with a single, clear view of operations.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">E-commerce Businesses</h3>
+                <!-- Card 2: API-First Development -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h4 class="text-xl font-bold text-black mb-4">API-First Development</h4>
                     <p class="text-neutral-700">
-                        Integrate your online store with inventory management, accounting, shipping, and customer support systems for unified operations.
+                        Every solution is built for secure, flexible, long-term integration across all platforms.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">SaaS Companies</h3>
+                <!-- Card 3: Comprehensive DevOps Support -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h4 class="text-xl font-bold text-black mb-4">Comprehensive DevOps Support</h4>
                     <p class="text-neutral-700">
-                        Build integrations that connect your product with popular tools your customers use, increasing adoption and retention.
+                        Hosting, monitoring, automated backups, and CI/CD pipelines are fully managed, so you can focus on growth.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">Enterprise Organizations</h3>
+                <!-- Card 4: Automation and AI Advantage -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                    <h4 class="text-xl font-bold text-black mb-4">Automation and AI Advantage</h4>
                     <p class="text-neutral-700">
-                        Connect legacy systems with modern cloud platforms, creating a unified technology ecosystem that scales with your business.
+                        Workflows powered by AI reduce repetitive tasks, freeing your team to focus on outcomes.
                     </p>
+                </div>
+                
+                <!-- Card 5: Global Track Record -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <h4 class="text-xl font-bold text-black mb-4">Global Track Record</h4>
+                    <p class="text-neutral-700">
+                        Companies across industries trust Koodi to build automation-ready systems that scale effortlessly.
+                    </p>
+                </div>
+                
+                <!-- CTA Card -->
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-[#F3BF00]/50 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-lg font-bold text-black mb-4">
+                            Ready to build a unified, automation-ready system?
+                        </p>
+                        <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                            Start Your Integration Journey Today
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -506,14 +597,17 @@
     <section class="py-16 md:py-24 bg-gradient-to-br from-[#F3BF00] to-yellow-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
-                Ready to Connect Your Systems?
+                Turn Scattered Tools into a Single Business Engine
             </h2>
-            <p class="text-lg text-black/80 mb-8">
-                Book a free integration audit and discover how unified systems can transform your operations.
+            <p class="text-lg text-black/90 mb-4">
+                Stop juggling disconnected systems and start running your business with clarity and control. Koodi helps you unify CRMs, ERPs, payment systems, and operational tools into one platform that works seamlessly. You'll save time, reduce errors, and gain real-time insights across your operations.
+            </p>
+            <p class="text-lg text-black/90 mb-8">
+                Start with a free systems audit. Our team will assess your current tools, identify workflow bottlenecks, and uncover opportunities for automation. You'll leave with a clear, actionable plan to streamline your systems and maximize efficiency.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="../contact.html" class="bg-black text-[#F3BF00] font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
-                    Book Your Free Integration Audit
+                    Claim Your Free Systems Audit
                 </a>
                 <a href="../index.html#services" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
                     View All Services
@@ -527,7 +621,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-12 mb-4">
                     <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
                 </div>
                 <div>
@@ -543,6 +637,7 @@
                     <h4 class="font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-neutral-400">
                         <li><a href="../blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="../faq.html" class="hover:text-[#F3BF00] transition">FAQ</a></li>
                         <li><a href="../contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
                     </ul>
                 </div>

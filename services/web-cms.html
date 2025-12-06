@@ -22,8 +22,8 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
-                <a href="../index.html" class="text-2xl md:text-3xl font-bold text-black">
-                    <span class="text-[#F3BF00]">Koodi</span>
+                <a href="../index.html" class="flex items-center">
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-10 md:h-12">
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -38,6 +38,7 @@
                         </div>
                     </div>
                     <a href="../blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
+                    <a href="../faq.html" class="text-neutral-700 hover:text-black font-medium">FAQ</a>
                     <a href="../contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
                     <a href="../contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
                 </div>
@@ -54,7 +55,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
         <div class="flex justify-between items-center p-4 border-b">
-            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <img src="../assets/images/logo.png" alt="Koodi" class="h-10">
             <button id="close-menu-button" class="p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -71,6 +72,7 @@
                 <a href="digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
             </div>
             <a href="../blog.html" class="block text-lg py-2">Case Studies</a>
+            <a href="../faq.html" class="block text-lg py-2">FAQ</a>
             <a href="../contact.html" class="block text-lg py-2">Contact</a>
             <a href="../contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
         </div>
@@ -113,40 +115,39 @@
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🐌</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Slow page load times</h3>
-                    <p class="text-neutral-700">Poor performance hurts SEO rankings and drives potential customers away.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1: Manual Content Updates -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                    <div class="text-3xl mb-4">⏰</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Manual Content Updates Eating Hours Weekly</h3>
+                    <p class="text-neutral-700">Your team wastes valuable time on publishing and content management because your CMS cannot leverage AI-powered workflow tools or automation platforms. Simple updates become time-consuming tasks.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🔧</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Difficult content updates</h3>
-                    <p class="text-neutral-700">Your team wastes hours navigating clunky interfaces or waiting for developers.</p>
+                <!-- Card 2: Data Stuck in Silos -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="text-3xl mb-4">🗄️</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Data Stuck in Silos Across Tools</h3>
+                    <p class="text-neutral-700">Critical business information remains trapped in disconnected systems, slowing down reporting and coordination. Your team struggles to access insights even as your business grows.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">📱</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Poor mobile experience</h3>
-                    <p class="text-neutral-700">Sites that don't work well on mobile lose engagement and conversions.</p>
+                <!-- Card 3: No Real-Time Visibility -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="text-3xl mb-4">👁️</div>
+                    <h3 class="text-xl font-bold text-black mb-3">No Real-Time Visibility Across Systems</h3>
+                    <p class="text-neutral-700">Disconnected systems conceal critical insights and hinder effective operation tracking. Decision-making slows because information isn't accessible when and where you need it.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🔒</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Security vulnerabilities</h3>
-                    <p class="text-neutral-700">Outdated platforms expose your business to security risks and data breaches.</p>
+                <!-- Card 4: Team Burnout -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <div class="text-3xl mb-4">😓</div>
+                    <h3 class="text-xl font-bold text-black mb-3">Team Burnout from Repetitive Admin Tasks</h3>
+                    <p class="text-neutral-700">Staff spend countless hours on tasks that could be automated with AI integration services, limiting your team's capacity for high-value strategic work and innovation.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md fade-in">
-                    <div class="text-3xl mb-4">🔌</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Limited integrations</h3>
-                    <p class="text-neutral-700">Your website doesn't connect with CRM, marketing, or analytics tools.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-[#F3BF00]/20 to-yellow-100 rounded-3xl p-8 shadow-md fade-in flex items-center">
-                    <div>
-                        <p class="text-lg font-semibold text-black">Our modernization solutions address all these challenges and more.</p>
+                <!-- Highlight Card -->
+                <div class="md:col-span-2 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-[#F3BF00]/50">
+                    <div class="text-center">
+                        <p class="text-xl font-bold text-black">Transform your website from a maintenance burden into a strategic growth engine with our AI-powered modernization solutions.</p>
                     </div>
                 </div>
             </div>
@@ -167,161 +168,83 @@
             
             <h3 class="text-2xl md:text-3xl font-bold text-black text-center mb-10 fade-in">Our Web and CMS Modernization Solutions</h3>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Performance Optimization</h3>
-                    <p class="text-neutral-700 mb-4">
-                        We optimize your website for speed, implementing caching, CDN integration, image optimization, and code minification to deliver lightning-fast experiences.
+            <div class="space-y-8">
+                <!-- Drupal 11 Migrations -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h4 class="text-2xl font-bold text-black mb-4">Drupal 11 Migrations With the Provus Design System</h4>
+                    <p class="text-neutral-700 mb-6">
+                        Shift to a secure and future-ready Drupal 11 platform with Provus. Automate publishing, manage structured content effortlessly, and integrate AI-powered workflow tools to reduce errors and save time.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700 mb-6">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Sub-2-second page load times</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Fewer repetitive tasks</strong> – Structured publishing and automation reduce manual work</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Improved Core Web Vitals scores</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Faster publishing cycles</strong> – Ready-to-use layouts and components speed up content delivery</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Better SEO rankings from speed improvements</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Enterprise-level security and scalability</strong> – Protect your operations as your business grows</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Headless CMS Implementation</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Modernize your content management with headless CMS platforms like Contentful, Sanity, or Strapi. Deliver content across web, mobile, and other channels from one source.
+                <!-- Headless CMS -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h4 class="text-2xl font-bold text-black mb-4">Headless CMS With Drupal Connected to Next.js or React</h4>
+                    <p class="text-neutral-700 mb-6">
+                        Deploy a decoupled system that connects to CRMs, analytics platforms, and automation systems, allowing your website to operate efficiently while remaining flexible for future AI integrations.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700 mb-6">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Omnichannel content delivery</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Optimized performance</strong> – Faster page loads improve user satisfaction</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Faster content updates and publishing</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Stronger security</strong> – Frontend and backend separation protect your data</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Improved developer and editor experience</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Modern tech stack</strong> – Compatible with AI tools, automation platforms, and workflow systems</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">AI-Powered Content Tools</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Integrate AI assistance for content creation, SEO optimization, image generation, and smart tagging to help your team produce better content faster.
+                <!-- Accessibility & Performance -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h4 class="text-2xl font-bold text-black mb-4">Accessibility, Compliance, and Automated Performance Optimization</h4>
+                    <p class="text-neutral-700 mb-6">
+                        Your website performs better with clean code, structured accessibility support, and automated reporting. We optimize your system to ensure performance remains reliable without requiring constant manual review. Your visitors and search engines gain trust because your site runs smoothly at scale.
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
+                    <ul class="space-y-3 text-neutral-700 mb-6">
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>AI-assisted content writing and editing</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Enhanced user experience</strong> – Accessibility and speed keep visitors engaged</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated image optimization and alt text</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Boost credibility</strong> – Compliance builds trust with users and regulators</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Smart content recommendations</span>
+                            <span class="text-[#F3BF00] mr-2 text-xl">✓</span>
+                            <span><strong>Improved SEO</strong> – Automated optimization improves visibility and rankings</span>
                         </li>
                     </ul>
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Mobile-First Responsive Design</h3>
-                    <p class="text-neutral-700 mb-4">
-                        We rebuild or redesign your site with mobile users as the priority, ensuring seamless experiences across all devices and screen sizes.
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-12 text-center fade-in">
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg border-2 border-[#F3BF00]/50">
+                    <p class="text-lg font-semibold text-black mb-6">
+                        Ready to transform your website into a growth-ready platform?
                     </p>
-                    <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Mobile-optimized interfaces</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Touch-friendly navigation and interactions</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Progressive Web App (PWA) capabilities</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Security & Compliance Upgrades</h3>
-                    <p class="text-neutral-700 mb-4">
-                        We implement modern security best practices, SSL certificates, regular updates, and compliance measures (GDPR, CCPA, accessibility).
-                    </p>
-                    <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Vulnerability scanning and patching</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Data privacy compliance</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>WCAG accessibility standards</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in">
-                    <div class="w-16 h-16 bg-gradient-to-br from-[#F3BF00] to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">CMS Integration & Automation</h3>
-                    <p class="text-neutral-700 mb-4">
-                        Connect your CMS with marketing automation, CRM, analytics, and other business tools. Automate content workflows and publishing schedules.
-                    </p>
-                    <ul class="space-y-2 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Automated content publishing workflows</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Marketing platform integrations</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#F3BF00] mr-2">✓</span>
-                            <span>Analytics and performance tracking</span>
-                        </li>
-                    </ul>
+                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                        Book Your Free Website Audit Today
+                    </a>
                 </div>
             </div>
         </div>
@@ -332,176 +255,332 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Our CMS Modernization Process
+                    Your Roadmap to a Fully Automated, AI-Ready Website
                 </h2>
                 <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    We follow a proven methodology to modernize your website without disrupting your operations.
+                    Your CMS can do more than just manage content. Our structured approach integrates AI automation, smart workflows, and system connections, allowing your team to spend less time on repetitive tasks and more time driving results.
                 </p>
             </div>
             
-            <div class="space-y-6">
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">1</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Website Audit & Analysis</h3>
-                            <p class="text-neutral-700">
-                                We analyze your current website's performance, security, user experience, and technical infrastructure. You'll receive a detailed report with prioritized recommendations.
-                            </p>
-                        </div>
+            <div class="relative max-w-5xl mx-auto space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12 perspective-1000">
+                <!-- Step 1: Audit -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-1deg] bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-rose-100 fade-in">
+                    <div class="absolute inset-0 bg-rose-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-rose-200 opacity-50">1</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Audit</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Pinpoint Bottlenecks and Opportunities</p>
+                        <p class="text-neutral-700">
+                            We analyze your CMS, content structures, and workflows to uncover inefficiencies. You gain clarity on how automation and AI can transform your operations.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">2</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Strategy & Planning</h3>
-                            <p class="text-neutral-700">
-                                We design a modernization roadmap tailored to your goals, budget, and timeline. This includes platform selection, feature planning, and integration requirements.
-                            </p>
-                        </div>
+
+                <!-- Step 2: Blueprint -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[1.5deg] bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-sky-100 fade-in">
+                    <div class="absolute inset-0 bg-sky-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-sky-200 opacity-50">2</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Blueprint</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Map Your Smarter System</p>
+                        <p class="text-neutral-700">
+                            We design your modernization roadmap with AI features, automation strategies, and integration mapping to turn your CMS into an operational powerhouse.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">3</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Design & Development</h3>
-                            <p class="text-neutral-700">
-                                Our team builds or rebuilds your website using modern frameworks and CMS platforms. We prioritize performance, security, and user experience throughout.
-                            </p>
-                        </div>
+
+                <!-- Step 3: Modernize -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-1.5deg] bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-violet-100 fade-in">
+                    <div class="absolute inset-0 bg-violet-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-violet-200 opacity-50">3</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Modernize</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Build a Smarter Foundation</p>
+                        <p class="text-neutral-700">
+                            We upgrade your site with Drupal 11, component-based layouts, and AI-ready structures. Your CMS becomes reliable, scalable, and ready for growth.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">4</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Migration & Launch</h3>
-                            <p class="text-neutral-700">
-                                We carefully migrate your content, set up redirects, test thoroughly, and launch your modernized site with minimal downtime.
-                            </p>
-                        </div>
+
+                <!-- Step 4: Integrate -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[0.5deg] bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-emerald-100 fade-in">
+                    <div class="absolute inset-0 bg-emerald-500/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-emerald-200 opacity-50">4</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Integrate</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Connect Your Business Tools</p>
+                        <p class="text-neutral-700">
+                            We integrate CRM platforms, payment systems, and analytics dashboards so your workflows communicate in real-time with accurate, actionable insights.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="bg-gradient-to-r from-white to-neutral-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <div class="flex items-start gap-6">
-                        <div class="flex-shrink-0 w-12 h-12 bg-[#F3BF00] rounded-xl flex items-center justify-center">
-                            <span class="text-2xl font-bold text-black">5</span>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-black mb-2">Training & Ongoing Support</h3>
-                            <p class="text-neutral-700">
-                                Your team receives comprehensive training on the new CMS. We provide ongoing support, maintenance, and optimization to ensure continued success.
-                            </p>
-                        </div>
+
+                <!-- Step 5: Optimize -->
+                <div class="relative group transform transition-all duration-500 ease-in-out hover:rotate-0 hover:scale-105 hover:z-10 md:rotate-[-0.5deg] bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-2xl border-2 border-[#F3BF00]/50 fade-in">
+                    <div class="absolute inset-0 bg-[#F3BF00]/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <span class="absolute top-4 left-4 text-6xl font-extrabold text-yellow-800 opacity-50">5</span>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-black mb-3">Optimize</h3>
+                        <p class="text-sm font-semibold text-neutral-600 mb-2">Maintain Peak Performance</p>
+                        <p class="text-neutral-700">
+                            We refine speed, accessibility, and automation logic to ensure your platform performs consistently with minimal oversight. Your team focuses on execution.
+                        </p>
                     </div>
                 </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-16 text-center fade-in">
+                <a href="../contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:brightness-110 transition">
+                    Schedule a Website Consultation With Us
+                </a>
             </div>
         </div>
     </section>
     
-    <!-- Tech Stack Section -->
+    <!-- Business Types Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Modern Technologies We Use
+                    Modernization That Works Across Your Entire Operation
                 </h2>
                 <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    We work with leading CMS platforms and modern web technologies.
+                    We help teams that rely on digital systems operate faster and with fewer manual steps. Our goal is to create automated and integrated web platforms that bring clarity, speed, and accuracy to your daily workflow.
                 </p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">WordPress</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Agencies -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Agencies</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Agencies benefit from automated reporting, streamlined content updates, and organized client workflows. Your team avoids repetitive admin tasks and gains more time for creative work.
+                    </p>
+                    <ul class="space-y-2 text-neutral-700">
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Automated client reports that update dashboards and summaries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>CMS updates that run through predefined rules</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Asset libraries that support fast publishing and content delivery</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Webflow</p>
+                
+                <!-- E-commerce Brands -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">E-commerce Brands</h3>
+                    <p class="text-neutral-700 mb-4">
+                        E-commerce brands operate more effectively with connected systems that track orders, synchronize data, and streamline fulfillment. Your analytics stay current, and your operations maintain strong accuracy across the customer journey.
+                    </p>
+                    <ul class="space-y-2 text-neutral-700">
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Syncing your CMS and CRM for real-time customer updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Automated fulfillment that connects product data to logistics tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Unified analytics dashboards that show performance across channels</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Contentful</p>
+                
+                <!-- Service Businesses -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Service Businesses</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Service-driven teams gain better visibility through AI-supported dashboards and automated scheduling tools. Your lead tracking stays organized, and your operations gain a clear structure.
+                    </p>
+                    <ul class="space-y-2 text-neutral-700">
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>AI-assisted lead tracking that keeps your pipeline updated</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Automated scheduling that reduces manual coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Centralized dashboards that organize client activity</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Sanity</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Strapi</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Laravel</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Next.js</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">React</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Vue.js</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Tailwind CSS</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">Shopify</p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md text-center fade-in">
-                    <p class="font-semibold text-black">WooCommerce</p>
+                
+                <!-- Enterprises -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <h3 class="text-2xl font-bold text-black mb-4">Enterprises</h3>
+                    <p class="text-neutral-700 mb-4">
+                        Enterprises manage complex systems that require secure platforms and reliable data flow. Our API-integrated CMS environments support controlled workflows and scalable operations.
+                    </p>
+                    <ul class="space-y-2 text-neutral-700">
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Secure integrations across CRMs, databases, and logistics systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Role-based CMS environments for large teams</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#F3BF00] mr-2">✓</span>
+                            <span>Enterprise dashboards that consolidate reporting</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Use Cases Section -->
+    <!-- Case Studies Section -->
     <section class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Who Benefits From CMS Modernization?
+                    Real Results That Prove the Value of Modernization
                 </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    Your website becomes a stronger operational asset when it is rebuilt for speed, structure, and AI-ready workflows. Our modernization projects create platforms that run faster, scale smoothly, and support the daily work of your teams without friction.
+                </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">Content-Heavy Businesses</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Case Study 1 -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <div class="bg-sky-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        Agency
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        Creative Agency Cuts Content Publishing Time by 60%
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Migrated to Drupal 11 with automated workflows, reducing manual updates and improving client delivery speed.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <div class="bg-violet-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        E-commerce
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        E-commerce Brand Achieves 40% Faster Page Loads
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Headless CMS implementation with Next.js resulted in improved performance, better SEO, and increased conversions.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <div class="bg-emerald-500 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+                        Service Business
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">
+                        Service Firm Streamlines Operations with AI-Powered CMS
+                    </h3>
+                    <p class="text-neutral-700 mb-4">
+                        Automated lead tracking and centralized dashboards saved 15+ hours per week on administrative tasks.
+                    </p>
+                    <div class="text-[#F3BF00] font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="mt-12 text-center fade-in">
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg border-2 border-[#F3BF00]/50">
+                    <p class="text-lg font-semibold text-black mb-6">
+                        See how modernization can transform your website into a high-performing operational asset.
+                    </p>
+                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                        Schedule Your Website Modernization Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Work With Us Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                    Koodi: Your Automation-Focused Modernization Partner
+                </h2>
+                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                    Your website should do more than look good. Koodi transforms it into a system that powers AI automation, integrates seamlessly with your tools, and optimizes workflows. Our approach gives you a smarter, more reliable platform that drives efficiency and supports growth at every stage.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1: Proven Drupal and AI Expertise -->
+                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Proven Drupal and AI Expertise</h3>
                     <p class="text-neutral-700">
-                        Publishers, media companies, and content marketers who need fast, scalable platforms to manage large volumes of content efficiently.
+                        Our team combines deep CMS knowledge with AI-powered solutions to create future-ready websites. You get a platform that can handle complex content and automation without slowing down.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">E-commerce Brands</h3>
+                <!-- Card 2: Automation-First Approach -->
+                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Automation-First Approach</h3>
                     <p class="text-neutral-700">
-                        Online retailers who need better performance, mobile experiences, and integration with inventory and payment systems.
+                        Every update is designed to reduce repetitive tasks. You gain AI-enabled workflow tools that free your team to focus on strategic projects and higher-value work.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">Growing Businesses</h3>
+                <!-- Card 3: Seamless System Integrations -->
+                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Seamless System Integrations</h3>
                     <p class="text-neutral-700">
-                        Companies outgrowing their current website and needing scalable infrastructure that supports business expansion.
+                        We link CRMs, analytics dashboards, and internal tools to ensure your data flows smoothly. You gain real-time visibility, improved reporting, and coordinated operations.
                     </p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in">
-                    <h3 class="text-2xl font-bold text-black mb-4">Organizations With Compliance Needs</h3>
+                <!-- Card 4: Business-Led Strategy -->
+                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Business-Led Strategy</h3>
                     <p class="text-neutral-700">
-                        Businesses that must meet security, privacy, and accessibility standards for their industry or region.
+                        Your modernization plan is guided by your goals, not just technical updates. We prioritize solutions that enhance efficiency, minimize errors, and deliver tangible results.
                     </p>
+                </div>
+                
+                <!-- Card 5: Global Trust -->
+                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                    <h3 class="text-xl font-bold text-black mb-4">Global Trust</h3>
+                    <p class="text-neutral-700">
+                        Companies across the US, EU, and AU rely on Koodi to build scalable, automation-ready web platforms. You can trust our experience to support your growth, no matter where you operate.
+                    </p>
+                </div>
+                
+                <!-- CTA Card -->
+                <div class="bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-[#F3BF00]/50 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-lg font-bold text-black mb-4">
+                            Ready to build a smarter, automation-ready website?
+                        </p>
+                        <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                            Upgrade Your Website Today
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -532,7 +611,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <img src="../assets/images/logo.png" alt="Koodi" class="h-12 mb-4">
                     <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
                 </div>
                 <div>
@@ -548,6 +627,7 @@
                     <h4 class="font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-neutral-400">
                         <li><a href="../blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
+                        <li><a href="../faq.html" class="hover:text-[#F3BF00] transition">FAQ</a></li>
                         <li><a href="../contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
                     </ul>
                 </div>

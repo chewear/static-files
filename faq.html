@@ -22,8 +22,8 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
-                <a href="index.html" class="text-2xl md:text-3xl font-bold text-black">
-                    <span class="text-[#F3BF00]">Koodi</span>
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo.png" alt="Koodi" class="h-10 md:h-12">
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -55,7 +55,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
         <div class="flex justify-between items-center p-4 border-b">
-            <span class="text-2xl font-bold"><span class="text-[#F3BF00]">Koodi</span></span>
+            <img src="assets/images/logo.png" alt="Koodi" class="h-10">
             <button id="close-menu-button" class="p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -92,11 +92,66 @@
         </div>
     </section>
     
+    <!-- Quick Navigation Section -->
+    <section class="py-8 bg-gradient-to-br from-neutral-50 to-white border-b border-neutral-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl md:text-2xl font-bold text-black mb-6 text-center">Jump to Topic</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#ai-automation" class="bg-gradient-to-br from-sky-50 to-cyan-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-[1.05] text-center border-2 border-sky-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-black mb-1">AI Automation</h3>
+                    <p class="text-sm text-neutral-600">15 questions</p>
+                </a>
+                
+                <a href="#web-cms" class="bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-[1.05] text-center border-2 border-violet-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-black mb-1">Web & CMS</h3>
+                    <p class="text-sm text-neutral-600">6 questions</p>
+                </a>
+                
+                <a href="#digital-transformation" class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-[1.05] text-center border-2 border-emerald-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-black mb-1">Digital Transformation</h3>
+                    <p class="text-sm text-neutral-600">6 questions</p>
+                </a>
+                
+                <a href="#integration-api" class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-[1.05] text-center border-2 border-amber-100">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-black mb-1">Integration & API</h3>
+                    <p class="text-sm text-neutral-600">6 questions</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
     <!-- FAQ Section -->
     <section class="py-16 md:py-24 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="space-y-6">
-                <!-- FAQ 1 -->
+            <!-- AI Automation FAQs -->
+            <div id="ai-automation" class="mb-16 scroll-mt-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 text-center">AI Workflow Automation</h2>
+                <p class="text-lg text-neutral-700 text-center mb-10 max-w-3xl mx-auto">
+                    Common questions about AI automation services, workflow tools, and intelligent business process automation.
+                </p>
+                
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
                 <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-sky-100">
                     <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How does AI workflow automation differ from traditional automation tools?</h3>
                     <p class="text-neutral-700 leading-relaxed">
@@ -215,6 +270,221 @@
                         We provide ongoing support, workflow optimization, and training to ensure your AI-powered tools remain effective. Our team monitors performance, implements improvements, and guides your team in leveraging AI integration tech for maximum efficiency and growth.
                     </p>
                 </div>
+                </div>
+                
+                <!-- Back to Topics Link -->
+                <div class="mt-8 text-center">
+                    <a href="#" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                        Back to Topics
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Web & CMS Modernization FAQs -->
+            <div id="web-cms" class="mt-16 scroll-mt-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 text-center">Web & CMS Modernization</h2>
+                <p class="text-lg text-neutral-700 text-center mb-10 max-w-3xl mx-auto">
+                    Your web modernization project shouldn't feel overwhelming. Let's address your questions about website and CMS modernization.
+                </p>
+                
+                <div class="space-y-6">
+                    <!-- Web FAQ 1 -->
+                    <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-sky-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can our current CMS handle automation?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. We implement AI integration services that connect your existing platform with automation tools and business software, enhancing workflows without disruption.
+                        </p>
+                    </div>
+                    
+                    <!-- Web FAQ 2 -->
+                    <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-violet-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">What if we're not using Drupal?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            No problem. Our team creates custom AI solutions for any platform and ensures smooth AI system integration across your business tools.
+                        </p>
+                    </div>
+                    
+                    <!-- Web FAQ 3 -->
+                    <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-emerald-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Will our site stay live during modernization?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Absolutely. Our process ensures zero downtime, so your customers and team experience no interruptions.
+                        </p>
+                    </div>
+                    
+                    <!-- Web FAQ 4 -->
+                    <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-rose-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you handle AI setup and integrations too?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. We provide end-to-end AI automation, including AI consulting services, integration with your tools, and machine learning automation services.
+                        </p>
+                    </div>
+                    
+                    <!-- Web FAQ 5 -->
+                    <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-amber-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How long does a modernization and automation project take?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Typical timelines depend on your system size and complexity, but we deliver AI-powered business automation efficiently with clear milestones.
+                        </p>
+                    </div>
+                    
+                    <!-- Web FAQ 6 -->
+                    <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-indigo-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can you train our team to manage automated workflows?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. We provide training and support for your team to use AI-powered tools effectively and maintain intelligent automation solutions independently.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Back to Topics Link -->
+                <div class="mt-8 text-center">
+                    <a href="#" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                        Back to Topics
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Digital Transformation Advisory FAQs -->
+            <div id="digital-transformation" class="mt-16 scroll-mt-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 text-center">Digital Transformation Advisory</h2>
+                <p class="text-lg text-neutral-700 text-center mb-10 max-w-3xl mx-auto">
+                    We know digital transformation raises questions. Our goal is to make every step transparent and actionable so you feel confident about moving forward.
+                </p>
+                
+                <div class="space-y-6">
+                    <!-- DT FAQ 1 -->
+                    <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-sky-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">What's the difference between advisory and implementation?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Advisory defines the strategy, roadmap, and priorities for your digital transformation. Implementation executes that plan, connecting your tools, automating workflows, and training your team. You can choose advisory-only services or combine them with hands-on support.
+                        </p>
+                    </div>
+                    
+                    <!-- DT FAQ 2 -->
+                    <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-violet-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you work with existing tech stacks or recommend new ones?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            We evaluate your current tools first. Our team identifies gaps, opportunities for integration, and potential for automation. If upgrades or new platforms provide better efficiency or AI capabilities, we make clear, actionable recommendations.
+                        </p>
+                    </div>
+                    
+                    <!-- DT FAQ 3 -->
+                    <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-emerald-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How long does a transformation roadmap project take?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Roadmap projects typically take 4 to 8 weeks, depending on complexity. This includes discovery, audits, gap analysis, and detailed recommendations for your operations, workflows, and AI integrations.
+                        </p>
+                    </div>
+                    
+                    <!-- DT FAQ 4 -->
+                    <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-rose-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can you help our team implement the roadmap afterward?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. We provide full implementation support or fractional CTO services to ensure your systems are integrated and your team is confident using them.
+                        </p>
+                    </div>
+                    
+                    <!-- DT FAQ 5 -->
+                    <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-amber-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">What industries do you specialize in?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            We work with SMEs, service-based businesses, marketing and creative agencies, e-commerce brands, and scaling startups. Our expertise spans any organization seeking automation-ready, AI-powered operations.
+                        </p>
+                    </div>
+                    
+                    <!-- DT FAQ 6 -->
+                    <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-indigo-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you offer ongoing CTO or retainer advisory support?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. We offer flexible engagement models, including ongoing advisory, fractional CTO support, or project-based consulting, tailored to your team's needs and growth stage.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Back to Topics Link -->
+                <div class="mt-8 text-center">
+                    <a href="#" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                        Back to Topics
+                    </a>
+                </div>
+            </div>
+            
+            <!-- System Integration & API Engineering FAQs -->
+            <div id="integration-api" class="mt-16 scroll-mt-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 text-center">System Integration & API Engineering</h2>
+                <p class="text-lg text-neutral-700 text-center mb-10 max-w-3xl mx-auto">
+                    We understand that system integration and operations engineering can feel complex. Our goal is to make it simple and transparent, so you know exactly what to expect.
+                </p>
+                
+                <div class="space-y-6">
+                    <!-- Integration FAQ 1 -->
+                    <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-sky-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">What platforms can you integrate with my business tools?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            We connect CRMs, ERPs, e-commerce systems, payment processors, and project management tools. Our focus is seamless data flow across your stack.
+                        </p>
+                    </div>
+                    
+                    <!-- Integration FAQ 2 -->
+                    <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-violet-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you only support Drupal and Laravel?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Drupal and Laravel are our core areas of expertise, but we can also work with other systems that support API-based integration.
+                        </p>
+                    </div>
+                    
+                    <!-- Integration FAQ 3 -->
+                    <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-emerald-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Are your integrations secure?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            Yes. Every integration is built with security in mind, including encrypted connections, secure user authentication, and continuous monitoring.
+                        </p>
+                    </div>
+                    
+                    <!-- Integration FAQ 4 -->
+                    <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-rose-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Can you repair integrations that are already failing?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            We can. Our team identifies weak points, fixes errors, and optimizes existing integrations to prevent future disruptions.
+                        </p>
+                    </div>
+                    
+                    <!-- Integration FAQ 5 -->
+                    <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-amber-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">Do you provide support after deployment?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            We provide ongoing monitoring, optimization, and support to maintain stable, automated operations for your business.
+                        </p>
+                    </div>
+                    
+                    <!-- Integration FAQ 6 -->
+                    <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition fade-in border-2 border-indigo-100">
+                        <h3 class="text-xl md:text-2xl font-bold text-black mb-4">How long does an integration project take?</h3>
+                        <p class="text-neutral-700 leading-relaxed">
+                            The timeline depends on the project scope. Most mid-sized system integrations are completed in 4 to 8 weeks, including testing and optimization.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Back to Topics Link -->
+                <div class="mt-8 text-center">
+                    <a href="#" class="inline-flex items-center text-[#F3BF00] font-semibold hover:underline">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                        Back to Topics
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -244,7 +514,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4"><span class="text-[#F3BF00]">Koodi</span></h3>
+                    <img src="assets/images/logo.png" alt="Koodi" class="h-12 mb-4">
                     <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
                 </div>
                 <div>
@@ -277,7 +547,35 @@
         </div>
     </footer>
     
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-[#F3BF00] text-black p-4 rounded-full shadow-lg hover:brightness-110 transition opacity-0 pointer-events-none z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    
     <script src="assets/js/main.js"></script>
+    <script>
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.pointerEvents = 'auto';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.pointerEvents = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
 
