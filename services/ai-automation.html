@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Workflow Automation Services - Koodi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI & Workflow Automation Services - Koodi</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
         body {
@@ -15,606 +15,996 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .hero-fade::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('../assets/images/ai-automation.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .hero-fade::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 10%, transparent 25%, transparent 75%, rgba(255,255,255,0.7) 90%, rgba(255,255,255,0.95) 100%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-fade::before {
+                background-size: contain;
+                background-position: right;
+            }
+        }
+
+        .hero-fade > * {
+            position: relative;
+            z-index: 1;
+        }
+
     </style>
-</head>
-<body class="bg-neutral-50">
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 md:h-20">
-                <a href="../index.html" class="flex items-center">
-                    <img src="../assets/images/logo.png" alt="Koodi" class="h-10 md:h-12">
-                </a>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="text-neutral-700 hover:text-black font-medium">Home</a>
-                    <div class="relative group">
-                        <button class="text-black font-semibold border-b-2 border-[#F3BF00]">Services</button>
-                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="ai-automation.html" class="block px-6 py-3 bg-[#F3BF00]/10 font-semibold rounded-t-xl">AI & Workflow Automation</a>
-                            <a href="integration-api.html" class="block px-6 py-3 hover:bg-neutral-50">System Integration & API</a>
-                            <a href="web-cms.html" class="block px-6 py-3 hover:bg-neutral-50">Web & CMS Modernization</a>
-                            <a href="digital-transformation.html" class="block px-6 py-3 hover:bg-neutral-50 rounded-b-xl">Digital Transformation</a>
+    </head>
+    <body class="bg-neutral-50">
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16 md:h-20">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../assets/images/logo.png" alt="Koodi"
+                            class="h-10 md:h-12">
+                    </a>
+
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="../index.html"
+                            class="text-neutral-700 hover:text-black font-medium">Home</a>
+                        <div class="relative group">
+                            <button
+                                class="text-black font-semibold border-b-2 border-[#F3BF00]">Services</button>
+                            <div
+                                class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <a href="ai-automation.html"
+                                    class="block px-6 py-3 bg-[#F3BF00]/10 font-semibold rounded-t-xl">AI
+                                    & Workflow Automation</a>
+                                <a href="integration-api.html"
+                                    class="block px-6 py-3 hover:bg-neutral-50">System
+                                    Integration & API</a>
+                                <a href="web-cms.html"
+                                    class="block px-6 py-3 hover:bg-neutral-50">Web
+                                    & CMS Modernization</a>
+                                <a href="digital-transformation.html"
+                                    class="block px-6 py-3 hover:bg-neutral-50 rounded-b-xl">Digital
+                                    Transformation</a>
+                            </div>
                         </div>
+                        <a href="../blog.html"
+                            class="text-neutral-700 hover:text-black font-medium">Case
+                            Studies</a>
+                        <a href="../faq.html"
+                            class="text-neutral-700 hover:text-black font-medium">FAQ</a>
+                        <a href="../contact.html"
+                            class="text-neutral-700 hover:text-black font-medium">Contact</a>
+                        <a href="../contact.html"
+                            class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book
+                            Consultation</a>
                     </div>
-                    <a href="../blog.html" class="text-neutral-700 hover:text-black font-medium">Case Studies</a>
-                    <a href="../faq.html" class="text-neutral-700 hover:text-black font-medium">FAQ</a>
-                    <a href="../contact.html" class="text-neutral-700 hover:text-black font-medium">Contact</a>
-                    <a href="../contact.html" class="bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">Book Consultation</a>
+
+                    <button id="mobile-menu-button" class="md:hidden p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                
-                <button id="mobile-menu-button" class="md:hidden p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
+            <div class="flex justify-between items-center p-4 border-b">
+                <img src="../assets/images/logo.png" alt="Koodi" class="h-10">
+                <button id="close-menu-button" class="p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
-        </div>
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white">
-        <div class="flex justify-between items-center p-4 border-b">
-            <img src="../assets/images/logo.png" alt="Koodi" class="h-10">
-            <button id="close-menu-button" class="p-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="p-4 space-y-4">
-            <a href="../index.html" class="block text-lg py-2">Home</a>
-            <div class="space-y-2">
-                <p class="text-sm font-semibold text-neutral-500 uppercase">Services</p>
-                <a href="ai-automation.html" class="block text-lg font-semibold text-black py-2 pl-4">AI & Workflow Automation</a>
-                <a href="integration-api.html" class="block text-lg py-2 pl-4">System Integration & API</a>
-                <a href="web-cms.html" class="block text-lg py-2 pl-4">Web & CMS Modernization</a>
-                <a href="digital-transformation.html" class="block text-lg py-2 pl-4">Digital Transformation</a>
-            </div>
-            <a href="../blog.html" class="block text-lg py-2">Case Studies</a>
-            <a href="../faq.html" class="block text-lg py-2">FAQ</a>
-            <a href="../contact.html" class="block text-lg py-2">Contact</a>
-            <a href="../contact.html" class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book Consultation</a>
-        </div>
-    </div>
-    
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center fade-in">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-                    Stop Doing Manual Work. Let AI Run Your Routine Operations.
-                </h1>
-                <p class="text-lg md:text-xl text-neutral-700 mb-8">
-                    Our AI automation services and business process automation services help growing teams reclaim 10+ hours each week. We design AI-powered workflow tools and AI system integration solutions that remove repetitive tasks, streamline operations, and give your team time to focus on strategic priorities.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="../contact.html" class="bg-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:brightness-110 transition">
-                        Book a Free Automation Audit
-                    </a>
-                    <a href="#solutions" class="border-2 border-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl hover:bg-[#F3BF00]/10 transition">
-                        See What We Can Automate
-                    </a>
+            <div class="p-4 space-y-4">
+                <a href="../index.html" class="block text-lg py-2">Home</a>
+                <div class="space-y-2">
+                    <p
+                        class="text-sm font-semibold text-neutral-500 uppercase">Services</p>
+                    <a href="ai-automation.html"
+                        class="block text-lg font-semibold text-black py-2 pl-4">AI
+                        & Workflow Automation</a>
+                    <a href="integration-api.html"
+                        class="block text-lg py-2 pl-4">System Integration &
+                        API</a>
+                    <a href="web-cms.html" class="block text-lg py-2 pl-4">Web &
+                        CMS Modernization</a>
+                    <a href="digital-transformation.html"
+                        class="block text-lg py-2 pl-4">Digital
+                        Transformation</a>
                 </div>
+                <a href="../blog.html" class="block text-lg py-2">Case
+                    Studies</a>
+                <a href="../faq.html" class="block text-lg py-2">FAQ</a>
+                <a href="../contact.html" class="block text-lg py-2">Contact</a>
+                <a href="../contact.html"
+                    class="block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl text-center mt-4">Book
+                    Consultation</a>
             </div>
         </div>
-    </section>
-    
-    <!-- Problem Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Manual Work Is Draining Your Time and Energy
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    Repetitive tasks, scattered spreadsheets, and disconnected systems quietly drain your team's productivity. Without AI-powered business automation and intelligent automation solutions, even routine work takes too long, and strategic priorities get delayed.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Top row: 3 cards -->
-                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
-                    <div class="text-3xl mb-4">⏱️</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Hours wasted switching systems</h3>
-                    <p class="text-neutral-700">Moving information manually between CRMs, analytics platforms, and reporting tools slows progress.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
-                    <div class="text-3xl mb-4">🔄</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Team handoffs that create friction</h3>
-                    <p class="text-neutral-700">Operations, marketing, and sales workflows become inefficient without AI integration services.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-red-50 via-white to-rose-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-red-100">
-                    <div class="text-3xl mb-4">📉</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Lost opportunities due to manual follow-ups</h3>
-                    <p class="text-neutral-700">Manual reminders and tracking lead to missed sales and client interactions.</p>
-                </div>
-                
-                <!-- Bottom row: 3 cards -->
-                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
-                    <div class="text-3xl mb-4">🗄️</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Data trapped in silos</h3>
-                    <p class="text-neutral-700">Lack of unified reporting limits insights and reduces the effectiveness of machine learning automation services.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-[#F3BF00] via-[#FFD700] to-[#FFA500] rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_rgba(243,191,0,0.4)] transition hover:scale-[1.03] fade-in flex items-center justify-center border-4 border-[#F3BF00] relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-[#F3BF00]/40 via-transparent to-[#FFD700]/40 opacity-50 animate-pulse"></div>
-                    <div class="relative z-10 text-center">
-                        <div class="text-5xl mb-4">✨</div>
-                        <p class="text-xl font-bold text-black leading-relaxed">AI workflow automation can reclaim these hours, letting your team work smarter instead of harder.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-gradient-to-br from-orange-50 via-white to-amber-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-orange-100">
-                    <div class="text-3xl mb-4">❌</div>
-                    <h3 class="text-xl font-bold text-black mb-3">Errors multiply with manual entry</h3>
-                    <p class="text-neutral-700">Copy-paste mistakes and inconsistent data entry create costly errors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Solutions Section -->
-    <section id="solutions" class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Automation That Lets Your Team Focus on Growth
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto mb-2">
-                    Our AI-powered business automation and intelligent automation solutions connect your systems, reduce manual work, and embed AI workflow automation to improve speed, accuracy, and visibility.
-                </p>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    With AI integration services, your workflows become seamless and scalable, without adding IT overhead.
-                </p>
-            </div>
-            
-            <h3 class="text-2xl md:text-3xl font-bold text-black text-center mb-8 fade-in">Our Solution Pillars</h3>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- AI-Powered Workflows -->
-                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
-                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">AI-Powered Workflows</h3>
-                    <p class="text-neutral-700 mb-6">
-                        Streamline repetitive tasks using no-code automation, AI software, or AI-powered tools.
-                    </p>
-                    <ul class="space-y-3 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-emerald-500 mr-2 font-bold">✓</span>
-                            <span><strong>Lead nurturing</strong> – Automate follow-ups and CRM updates.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-500 mr-2 font-bold">✓</span>
-                            <span><strong>Client onboarding</strong> – Centralize data entry across platforms.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-500 mr-2 font-bold">✓</span>
-                            <span><strong>Reporting automation</strong> – Consolidate analytics into ready-to-use dashboards.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-500 mr-2 font-bold">✓</span>
-                            <span><strong>Content publishing</strong> – Update multiple platforms without manual intervention.</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- AI-Enhanced Websites -->
-                <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-indigo-100">
-                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">AI-Enhanced Websites</h3>
-                    <p class="text-neutral-700 mb-6">
-                        Make your website a powerful operational tool with AI digital transformation services.
-                    </p>
-                    <ul class="space-y-3 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-indigo-500 mr-2 font-bold">✓</span>
-                            <span><strong>Dynamic SEO management</strong> – Automated metadata updates for better visibility.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-indigo-500 mr-2 font-bold">✓</span>
-                            <span><strong>Personalized experiences</strong> – Deliver content based on visitor behavior.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-indigo-500 mr-2 font-bold">✓</span>
-                            <span><strong>Smart components</strong> – Reuse design elements to reduce development costs.</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- AI-Driven Dashboards -->
-                <div class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-fuchsia-100">
-                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-400 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-black mb-4">AI-Driven Dashboards</h3>
-                    <p class="text-neutral-700 mb-6">
-                        Gain real-time insights with machine learning integration and AI business software.
-                    </p>
-                    <ul class="space-y-3 text-neutral-700">
-                        <li class="flex items-start">
-                            <span class="text-fuchsia-500 mr-2 font-bold">✓</span>
-                            <span><strong>Integrated data streams</strong> – Combine marketing, sales, and operations metrics in one view.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-fuchsia-500 mr-2 font-bold">✓</span>
-                            <span><strong>Actionable analytics</strong> – Identify trends and opportunities without manual compilation.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-fuchsia-500 mr-2 font-bold">✓</span>
-                            <span><strong>Automated insights</strong> – Use AI to highlight critical metrics for faster decision making.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- CTA -->
-            <div class="mt-12 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-10 md:p-12 shadow-lg border-2 border-[#F3BF00]/50 fade-in">
-                <div class="text-center">
-                    <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Stop Doing Manual Work. Start Growing Your Business.</h3>
-                    <p class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
-                        See exactly where AI automation can save your team 10+ hours per week and eliminate repetitive tasks for good.
-                    </p>
-                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
-                        Schedule Your Free Automation Audit
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Process Section: Stacked Progress Layers -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Your AI Automation Journey
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    We follow a proven 4-step methodology to ensure your automation delivers real results.
-                </p>
-            </div>
-            
-            <div class="relative" style="perspective: 1500px;">
-                <!-- Card 1: Discover -->
-                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(-1deg); transform-origin: center;">
-                    <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.15)] border-2 border-sky-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-8xl font-bold text-sky-100 opacity-50">1</div>
-                        <div class="flex items-start gap-6 relative z-10">
-                            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                                <span class="text-3xl font-bold text-white">1</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Discover</h3>
-                                <p class="text-neutral-700 text-lg">
-                                    We audit your current workflows and systems to identify repetitive tasks and inefficiencies. This assessment ensures we target the areas where AI workflow automation and AI integration services provide the most value.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 2: Design -->
-                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(1.5deg); transform-origin: center;">
-                    <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-[0_12px_45px_rgba(0,0,0,0.18)] border-2 border-violet-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-8xl font-bold text-violet-100 opacity-50">2</div>
-                        <div class="flex items-start gap-6 relative z-10">
-                            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-violet-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
-                                <span class="text-3xl font-bold text-white">2</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Design</h3>
-                                <p class="text-neutral-700 text-lg">
-                                    We create custom automation maps using AI-powered workflow tools, automation platforms, or pre-built integrations. Each workflow is tailored to meet your business needs, ensuring smooth operation across marketing, operations, and sales.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 3: Deploy -->
-                <div class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(-1.5deg); transform-origin: center;">
-                    <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-[0_14px_50px_rgba(0,0,0,0.2)] border-2 border-emerald-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-8xl font-bold text-emerald-100 opacity-50">3</div>
-                        <div class="flex items-start gap-6 relative z-10">
-                            <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg">
-                                <span class="text-3xl font-bold text-white">3</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Deploy</h3>
-                                <p class="text-neutral-700 text-lg">
-                                    We implement, test, and train your team on the automation solutions. From AI system integration to machine learning automation services, we ensure your tools work together without friction.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 4: Optimize -->
-                <div class="relative transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer" style="transform: rotate(1deg); transform-origin: center;">
-                    <div class="bg-gradient-to-br from-[#F3BF00] via-[#FFD700] to-[#FFA500] rounded-3xl p-8 shadow-[0_18px_60px_rgba(243,191,0,0.4)] border-2 border-[#F3BF00] relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-8xl font-bold text-black opacity-10">4</div>
-                        <div class="flex items-start gap-6 relative z-10">
-                            <div class="flex-shrink-0 w-16 h-16 bg-black rounded-2xl flex items-center justify-center shadow-lg">
-                                <span class="text-3xl font-bold text-[#F3BF00]">4</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl md:text-3xl font-bold text-black mb-3">Optimize</h3>
-                                <p class="text-black text-lg">
-                                    We continuously monitor performance and refine workflows to deliver consistent efficiency gains. With AI-powered business automation, your systems improve over time, freeing your team to focus on growth.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CTA -->
-            <div class="mt-16 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-10 md:p-12 shadow-lg border-2 border-[#F3BF00]/50 fade-in">
-                <div class="text-center">
-                    <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Your Automation Blueprint Starts Here</h3>
-                    <p class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
-                        Work with our automation experts to map out a custom plan that eliminates your biggest time-drains and bottlenecks.
-                    </p>
-                    <a href="../contact.html" class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
-                        Book a Free Consultation With Our Automation Experts
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Use Cases Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Who Benefits From AI Automation?
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    Our automation solutions serve diverse industries and use cases.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Creative & Marketing Agencies -->
-                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
-                    <div class="text-4xl mb-4">🎨</div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Creative & Marketing Agencies</h3>
-                    <p class="text-neutral-700">
-                        Streamline client onboarding, content approvals, and reporting with our AI workflow automation system. Maintain consistency and speed across campaigns without manual tracking.
-                    </p>
-                </div>
-                
-                <!-- E-commerce Brands -->
-                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
-                    <div class="text-4xl mb-4">🛒</div>
-                    <h3 class="text-2xl font-bold text-black mb-4">E-commerce Brands</h3>
-                    <p class="text-neutral-700">
-                        Automate order updates, customer support replies, and return handling using automation tools and AI system integration. Reduce processing time and deliver faster service to your customers.
-                    </p>
-                </div>
-                
-                <!-- Creators & Studios -->
-                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
-                    <div class="text-4xl mb-4">🎬</div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Creators & Studios</h3>
-                    <p class="text-neutral-700">
-                        Handle sponsor pipelines, content calendars, and payments with our AI-powered business automation system. Free up time to focus on growth and creative output.
-                    </p>
-                </div>
-                
-                <!-- Property & Real Estate -->
-                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
-                    <div class="text-4xl mb-4">🏢</div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Property & Real Estate</h3>
-                    <p class="text-neutral-700">
-                        Simplify lead qualification, schedule viewings, and manage tenant communications with Koodi's AI integration tech. Keep your operations organized and responsive.
-                    </p>
-                </div>
-                
-                <!-- Law & Accounting Firms -->
-                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100 md:col-span-2 lg:col-span-1">
-                    <div class="text-4xl mb-4">⚖️</div>
-                    <h3 class="text-2xl font-bold text-black mb-4">Law & Accounting Firms</h3>
-                    <p class="text-neutral-700">
-                        Automate client intake forms, document workflows, and invoice reminders through our enterprise AI automation solutions. Ensure accuracy while saving time on routine administrative tasks.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Case Studies Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Real Results from Smart Automation
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    We deliver business process automation services that eliminate repetitive tasks, streamline workflows, and enhance efficiency across your organization. Our custom AI solutions and AI-powered business automation have enabled businesses and brands worldwide to achieve measurable results while maintaining seamless operations.
-                </p>
-            </div>
-            
-            <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-12 text-center fade-in">
-                <div class="max-w-2xl mx-auto">
-                    <svg class="w-16 h-16 text-[#F3BF00] mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    <h3 class="text-2xl font-bold text-black mb-4">Case Studies Coming Soon</h3>
-                    <p class="text-neutral-700 mb-6">
-                        We're currently documenting success stories from our clients. Check back soon to see how we've helped businesses transform their operations with AI automation.
-                    </p>
-                    <a href="../blog.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-8 py-3 rounded-xl shadow-md hover:brightness-110 transition">
-                        See More AI Success Stories
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Why Work With Us Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
-                    Transform Your Business with a Hands-On Automation Partner
-                </h2>
-                <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
-                    Koodi delivers AI workflow automation and AI integration services that save time, reduce errors, and enable teams to focus on high-impact work. We combine expertise, strategy, and practical implementation to make automation actionable and effective.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
-                <!-- Row 1: 2 equal cards -->
-                <!-- Real Expertise -->
-                <div class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
-                    <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Real Expertise that Delivers</h3>
-                    <p class="text-neutral-700">
-                        We design AI-powered workflow tools and machine learning integration solutions that solve real challenges, not hypothetical ones.
-                    </p>
-                </div>
-                
-                <!-- Tools That Fit -->
-                <div class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
-                    <div class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Tools That Fit Your Business</h3>
-                    <p class="text-neutral-700">
-                        Our platform-agnostic approach ensures seamless AI system integration across sales, marketing, and operations, utilizing the best tools for your needs.
-                    </p>
-                </div>
-                
-                <!-- Row 2: 2 equal cards -->
-                <!-- Smart Automation -->
-                <div class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
-                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Smart, Targeted Automation</h3>
-                    <p class="text-neutral-700">
-                        We prioritize processes that deliver maximum efficiency. Intelligent automation solutions eliminate repetitive tasks, freeing your team to focus on driving business growth.
-                    </p>
-                </div>
-                
-                <!-- Built for Growth -->
-                <div class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
-                    <div class="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Built for Growth</h3>
-                    <p class="text-neutral-700">
-                        With enterprise AI automation solutions and AI digital transformation services, your workflows scale effortlessly with your business and evolving technology.
-                    </p>
-                </div>
-                
-                <!-- Row 3: 1 card spanning full width -->
-                <!-- Hands-On Support -->
-                <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100 md:col-span-2">
-                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-black mb-3">Hands-On Support</h3>
-                    <p class="text-neutral-700">
-                        From deployment to adoption, we guide your team every step of the way. AI-powered business automation becomes an extension of your workforce.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Pre-FAQ CTA Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-[#F3BF00] to-yellow-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
-                Let's Streamline Your Workflow Today
-            </h2>
-            <p class="text-lg text-black/80 mb-6">
-                Unlock the full potential of your operations with AI workflow automation and AI integration services designed for efficiency and growth. Our team will analyze your current processes, identify repetitive tasks, and demonstrate how business process automation services can save time and reduce costs.
-            </p>
-            <p class="text-lg text-black/80 mb-6">
-                This is your chance to make intelligent automation solutions work for your business. Let's simplify operations, boost productivity, and scale with confidence.
-            </p>
-            <p class="text-xl font-semibold text-black mb-8">
-                Book a free 30-minute automation audit to see exactly how AI-powered business automation and custom AI solutions can transform your workflows.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="../contact.html" class="bg-black text-[#F3BF00] font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
-                    Book Your Free Automation Audit Today
-                </a>
-                <a href="../index.html#services" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
-                    View All Services
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-black text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <img src="../assets/images/logo.png" alt="Koodi" class="h-12 mb-4">
-                    <p class="text-neutral-400">AI automation and business process automation services that amplify your growth.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-neutral-400">
-                        <li><a href="ai-automation.html" class="hover:text-[#F3BF00] transition">AI & Workflow Automation</a></li>
-                        <li><a href="integration-api.html" class="hover:text-[#F3BF00] transition">System Integration & API</a></li>
-                        <li><a href="web-cms.html" class="hover:text-[#F3BF00] transition">Web & CMS Modernization</a></li>
-                        <li><a href="digital-transformation.html" class="hover:text-[#F3BF00] transition">Digital Transformation</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-neutral-400">
-                        <li><a href="../blog.html" class="hover:text-[#F3BF00] transition">Case Studies</a></li>
-                        <li><a href="../faq.html" class="hover:text-[#F3BF00] transition">FAQ</a></li>
-                        <li><a href="../contact.html" class="hover:text-[#F3BF00] transition">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Get Started</h4>
-                    <a href="../contact.html" class="inline-block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">
-                        Book Consultation
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-neutral-800 pt-8 text-center text-neutral-400">
-                <p>&copy; 2025 Koodi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="../assets/js/main.js"></script>
-</body>
-</html>
 
+        <!-- Hero Section -->
+        <section
+            class="hero-fade relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-4xl mx-auto text-center fade-in">
+                        <h1
+                            class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+                            Stop Doing Manual Work. Let AI Run Your Routine
+                            Operations.
+                        </h1>
+                        <p class="text-lg md:text-xl text-neutral-700 mb-8">
+                            Our AI automation services and business process
+                            automation services help growing teams reclaim 10+
+                            hours each week. We design AI-powered workflow tools
+                            and AI system integration solutions that remove
+                            repetitive tasks, streamline operations, and give
+                            your team time to focus on strategic priorities.
+                        </p>
+                        <div
+                            class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="../contact.html"
+                                class="bg-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:brightness-110 transition">
+                                Book a Free Automation Audit
+                            </a>
+                            <a href="#solutions"
+                                class="border-2 border-[#F3BF00] text-black font-semibold px-8 py-4 rounded-xl hover:bg-[#F3BF00]/10 transition">
+                                See What We Can Automate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem Section -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Manual Work Is Draining Your Time and Energy
+                        </h2>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            Repetitive tasks, scattered spreadsheets, and
+                            disconnected systems quietly drain your team's
+                            productivity. Without AI-powered business automation
+                            and intelligent automation solutions, even routine
+                            work takes too long, and strategic priorities get
+                            delayed.
+                        </p>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Top row: 3 cards -->
+                        <div
+                            class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                            <div class="text-3xl mb-4">⏱️</div>
+                            <h3 class="text-xl font-bold text-black mb-3">Hours
+                                wasted switching systems</h3>
+                            <p class="text-neutral-700">Moving information
+                                manually between CRMs, analytics platforms, and
+                                reporting tools slows progress.</p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100">
+                            <div class="text-3xl mb-4">🔄</div>
+                            <h3 class="text-xl font-bold text-black mb-3">Team
+                                handoffs that create friction</h3>
+                            <p class="text-neutral-700">Operations, marketing,
+                                and sales workflows become inefficient without
+                                AI integration services.</p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-red-50 via-white to-rose-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-red-100">
+                            <div class="text-3xl mb-4">📉</div>
+                            <h3 class="text-xl font-bold text-black mb-3">Lost
+                                opportunities due to manual follow-ups</h3>
+                            <p class="text-neutral-700">Manual reminders and
+                                tracking lead to missed sales and client
+                                interactions.</p>
+                        </div>
+
+                        <!-- Bottom row: 3 cards -->
+                        <div
+                            class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                            <div class="text-3xl mb-4">🗄️</div>
+                            <h3 class="text-xl font-bold text-black mb-3">Data
+                                trapped in silos</h3>
+                            <p class="text-neutral-700">Lack of unified
+                                reporting limits insights and reduces the
+                                effectiveness of machine learning automation
+                                services.</p>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-[#F3BF00] via-[#FFD700] to-[#FFA500] rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_rgba(243,191,0,0.4)] transition hover:scale-[1.03] fade-in flex items-center justify-center border-4 border-[#F3BF00] relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-tr from-[#F3BF00]/40 via-transparent to-[#FFD700]/40 opacity-50 animate-pulse"></div>
+                            <div class="relative z-10 text-center">
+                                <div class="text-5xl mb-4">✨</div>
+                                <p
+                                    class="text-xl font-bold text-black leading-relaxed">AI
+                                    workflow automation can reclaim these hours,
+                                    letting your team work smarter instead of
+                                    harder.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gradient-to-br from-orange-50 via-white to-amber-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-orange-100">
+                            <div class="text-3xl mb-4">❌</div>
+                            <h3 class="text-xl font-bold text-black mb-3">Errors
+                                multiply with manual entry</h3>
+                            <p class="text-neutral-700">Copy-paste mistakes and
+                                inconsistent data entry create costly
+                                errors.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solutions Section -->
+            <section id="solutions"
+                class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Automation That Lets Your Team Focus on Growth
+                        </h2>
+                        <p
+                            class="text-lg text-neutral-700 max-w-3xl mx-auto mb-2">
+                            Our AI-powered business automation and intelligent
+                            automation solutions connect your systems, reduce
+                            manual work, and embed AI workflow automation to
+                            improve speed, accuracy, and visibility.
+                        </p>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            With AI integration services, your workflows become
+                            seamless and scalable, without adding IT overhead.
+                        </p>
+                    </div>
+
+                    <h3
+                        class="text-2xl md:text-3xl font-bold text-black text-center mb-8 fade-in">Our
+                        Solution Pillars</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- AI-Powered Workflows -->
+                        <div
+                            class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">AI-Powered
+                                Workflows</h3>
+                            <p class="text-neutral-700 mb-6">
+                                Streamline repetitive tasks using no-code
+                                automation, AI software, or AI-powered tools.
+                            </p>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-emerald-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Lead nurturing</strong> –
+                                        Automate follow-ups and CRM
+                                        updates.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-emerald-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Client onboarding</strong> –
+                                        Centralize data entry across
+                                        platforms.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-emerald-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Reporting automation</strong>
+                                        – Consolidate analytics into
+                                        ready-to-use dashboards.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-emerald-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Content publishing</strong> –
+                                        Update multiple platforms without manual
+                                        intervention.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- AI-Enhanced Websites -->
+                        <div
+                            class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-indigo-100">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">AI-Enhanced
+                                Websites</h3>
+                            <p class="text-neutral-700 mb-6">
+                                Make your website a powerful operational tool
+                                with AI digital transformation services.
+                            </p>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-indigo-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Dynamic SEO
+                                            management</strong> – Automated
+                                        metadata updates for better
+                                        visibility.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-indigo-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Personalized
+                                            experiences</strong> – Deliver
+                                        content based on visitor
+                                        behavior.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-indigo-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Smart components</strong> –
+                                        Reuse design elements to reduce
+                                        development costs.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- AI-Driven Dashboards -->
+                        <div
+                            class="bg-gradient-to-br from-fuchsia-50 via-white to-purple-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:scale-[1.015] fade-in border-2 border-fuchsia-100">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-fuchsia-400 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">AI-Driven
+                                Dashboards</h3>
+                            <p class="text-neutral-700 mb-6">
+                                Gain real-time insights with machine learning
+                                integration and AI business software.
+                            </p>
+                            <ul class="space-y-3 text-neutral-700">
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-fuchsia-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Integrated data
+                                            streams</strong> – Combine
+                                        marketing, sales, and operations metrics
+                                        in one view.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-fuchsia-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Actionable analytics</strong>
+                                        – Identify trends and opportunities
+                                        without manual compilation.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span
+                                        class="text-fuchsia-500 mr-2 font-bold">✓</span>
+                                    <span><strong>Automated insights</strong> –
+                                        Use AI to highlight critical metrics for
+                                        faster decision making.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div
+                        class="mt-12 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-10 md:p-12 shadow-lg border-2 border-[#F3BF00]/50 fade-in">
+                        <div class="text-center">
+                            <h3
+                                class="text-2xl md:text-3xl font-bold text-black mb-4">Stop
+                                Doing Manual Work. Start Growing Your
+                                Business.</h3>
+                            <p
+                                class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
+                                See exactly where AI automation can save your
+                                team 10+ hours per week and eliminate repetitive
+                                tasks for good.
+                            </p>
+                            <a href="../contact.html"
+                                class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                                Schedule Your Free Automation Audit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Section: Stacked Progress Layers -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Your AI Automation Journey
+                        </h2>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            We follow a proven 4-step methodology to ensure your
+                            automation delivers real results.
+                        </p>
+                    </div>
+
+                    <div class="relative" style="perspective: 1500px;">
+                        <!-- Card 1: Discover -->
+                        <div
+                            class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer"
+                            style="transform: rotate(-1deg); transform-origin: center;">
+                            <div
+                                class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.15)] border-2 border-sky-100 relative overflow-hidden">
+                                <div
+                                    class="absolute top-4 right-4 text-8xl font-bold text-sky-100 opacity-50">1</div>
+                                <div
+                                    class="flex items-start gap-6 relative z-10">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
+                                        <span
+                                            class="text-3xl font-bold text-white">1</span>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-2xl md:text-3xl font-bold text-black mb-3">Discover</h3>
+                                        <p class="text-neutral-700 text-lg">
+                                            We audit your current workflows and
+                                            systems to identify repetitive tasks
+                                            and inefficiencies. This assessment
+                                            ensures we target the areas where AI
+                                            workflow automation and AI
+                                            integration services provide the
+                                            most value.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Design -->
+                        <div
+                            class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer"
+                            style="transform: rotate(1.5deg); transform-origin: center;">
+                            <div
+                                class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-[0_12px_45px_rgba(0,0,0,0.18)] border-2 border-violet-100 relative overflow-hidden">
+                                <div
+                                    class="absolute top-4 right-4 text-8xl font-bold text-violet-100 opacity-50">2</div>
+                                <div
+                                    class="flex items-start gap-6 relative z-10">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-violet-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
+                                        <span
+                                            class="text-3xl font-bold text-white">2</span>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-2xl md:text-3xl font-bold text-black mb-3">Design</h3>
+                                        <p class="text-neutral-700 text-lg">
+                                            We create custom automation maps
+                                            using AI-powered workflow tools,
+                                            automation platforms, or pre-built
+                                            integrations. Each workflow is
+                                            tailored to meet your business
+                                            needs, ensuring smooth operation
+                                            across marketing, operations, and
+                                            sales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Deploy -->
+                        <div
+                            class="relative mb-8 transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer"
+                            style="transform: rotate(-1.5deg); transform-origin: center;">
+                            <div
+                                class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-[0_14px_50px_rgba(0,0,0,0.2)] border-2 border-emerald-100 relative overflow-hidden">
+                                <div
+                                    class="absolute top-4 right-4 text-8xl font-bold text-emerald-100 opacity-50">3</div>
+                                <div
+                                    class="flex items-start gap-6 relative z-10">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg">
+                                        <span
+                                            class="text-3xl font-bold text-white">3</span>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-2xl md:text-3xl font-bold text-black mb-3">Deploy</h3>
+                                        <p class="text-neutral-700 text-lg">
+                                            We implement, test, and train your
+                                            team on the automation solutions.
+                                            From AI system integration to
+                                            machine learning automation
+                                            services, we ensure your tools work
+                                            together without friction.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Optimize -->
+                        <div
+                            class="relative transition-all duration-500 hover:translate-y-[-8px] hover:rotate-0 hover:z-50 cursor-pointer"
+                            style="transform: rotate(1deg); transform-origin: center;">
+                            <div
+                                class="bg-gradient-to-br from-[#F3BF00] via-[#FFD700] to-[#FFA500] rounded-3xl p-8 shadow-[0_18px_60px_rgba(243,191,0,0.4)] border-2 border-[#F3BF00] relative overflow-hidden">
+                                <div
+                                    class="absolute top-4 right-4 text-8xl font-bold text-black opacity-10">4</div>
+                                <div
+                                    class="flex items-start gap-6 relative z-10">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-black rounded-2xl flex items-center justify-center shadow-lg">
+                                        <span
+                                            class="text-3xl font-bold text-[#F3BF00]">4</span>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="text-2xl md:text-3xl font-bold text-black mb-3">Optimize</h3>
+                                        <p class="text-black text-lg">
+                                            We continuously monitor performance
+                                            and refine workflows to deliver
+                                            consistent efficiency gains. With
+                                            AI-powered business automation, your
+                                            systems improve over time, freeing
+                                            your team to focus on growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div
+                        class="mt-16 bg-gradient-to-br from-[#F3BF00] via-yellow-200 to-amber-300 rounded-3xl p-10 md:p-12 shadow-lg border-2 border-[#F3BF00]/50 fade-in">
+                        <div class="text-center">
+                            <h3
+                                class="text-2xl md:text-3xl font-bold text-black mb-4">Your
+                                Automation Blueprint Starts Here</h3>
+                            <p
+                                class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
+                                Work with our automation experts to map out a
+                                custom plan that eliminates your biggest
+                                time-drains and bottlenecks.
+                            </p>
+                            <a href="../contact.html"
+                                class="inline-block bg-black text-white font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-neutral-800 transition">
+                                Book a Free Consultation With Our Automation
+                                Experts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Use Cases Section -->
+            <section
+                class="py-16 md:py-24 bg-gradient-to-br from-neutral-50 to-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Who Benefits From AI Automation?
+                        </h2>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            Our automation solutions serve diverse industries
+                            and use cases.
+                        </p>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Creative & Marketing Agencies -->
+                        <div
+                            class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                            <div class="text-4xl mb-4">🎨</div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">Creative
+                                & Marketing Agencies</h3>
+                            <p class="text-neutral-700">
+                                Streamline client onboarding, content approvals,
+                                and reporting with our AI workflow automation
+                                system. Maintain consistency and speed across
+                                campaigns without manual tracking.
+                            </p>
+                        </div>
+
+                        <!-- E-commerce Brands -->
+                        <div
+                            class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                            <div class="text-4xl mb-4">🛒</div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">E-commerce
+                                Brands</h3>
+                            <p class="text-neutral-700">
+                                Automate order updates, customer support
+                                replies, and return handling using automation
+                                tools and AI system integration. Reduce
+                                processing time and deliver faster service to
+                                your customers.
+                            </p>
+                        </div>
+
+                        <!-- Creators & Studios -->
+                        <div
+                            class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                            <div class="text-4xl mb-4">🎬</div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">Creators
+                                & Studios</h3>
+                            <p class="text-neutral-700">
+                                Handle sponsor pipelines, content calendars, and
+                                payments with our AI-powered business automation
+                                system. Free up time to focus on growth and
+                                creative output.
+                            </p>
+                        </div>
+
+                        <!-- Property & Real Estate -->
+                        <div
+                            class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                            <div class="text-4xl mb-4">🏢</div>
+                            <h3
+                                class="text-2xl font-bold text-black mb-4">Property
+                                & Real Estate</h3>
+                            <p class="text-neutral-700">
+                                Simplify lead qualification, schedule viewings,
+                                and manage tenant communications with Koodi's AI
+                                integration tech. Keep your operations organized
+                                and responsive.
+                            </p>
+                        </div>
+
+                        <!-- Law & Accounting Firms -->
+                        <div
+                            class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100 md:col-span-2 lg:col-span-1">
+                            <div class="text-4xl mb-4">⚖️</div>
+                            <h3 class="text-2xl font-bold text-black mb-4">Law &
+                                Accounting Firms</h3>
+                            <p class="text-neutral-700">
+                                Automate client intake forms, document
+                                workflows, and invoice reminders through our
+                                enterprise AI automation solutions. Ensure
+                                accuracy while saving time on routine
+                                administrative tasks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Case Studies Section -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Real Results from Smart Automation
+                        </h2>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            We deliver business process automation services that
+                            eliminate repetitive tasks, streamline workflows,
+                            and enhance efficiency across your organization. Our
+                            custom AI solutions and AI-powered business
+                            automation have enabled businesses and brands
+                            worldwide to achieve measurable results while
+                            maintaining seamless operations.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl p-12 text-center fade-in">
+                        <div class="max-w-2xl mx-auto">
+                            <svg class="w-16 h-16 text-[#F3BF00] mx-auto mb-6"
+                                fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <h3 class="text-2xl font-bold text-black mb-4">Case
+                                Studies Coming Soon</h3>
+                            <p class="text-neutral-700 mb-6">
+                                We're currently documenting success stories from
+                                our clients. Check back soon to see how we've
+                                helped businesses transform their operations
+                                with AI automation.
+                            </p>
+                            <a href="../blog.html"
+                                class="inline-block bg-[#F3BF00] text-black font-semibold px-8 py-3 rounded-xl shadow-md hover:brightness-110 transition">
+                                See More AI Success Stories
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Work With Us Section -->
+            <section class="py-16 md:py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 fade-in">
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+                            Transform Your Business with a Hands-On Automation
+                            Partner
+                        </h2>
+                        <p class="text-lg text-neutral-700 max-w-3xl mx-auto">
+                            Koodi delivers AI workflow automation and AI
+                            integration services that save time, reduce errors,
+                            and enable teams to focus on high-impact work. We
+                            combine expertise, strategy, and practical
+                            implementation to make automation actionable and
+                            effective.
+                        </p>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+                        <!-- Row 1: 2 equal cards -->
+                        <!-- Real Expertise -->
+                        <div
+                            class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-sky-100">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-sky-400 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3">Real
+                                Expertise that Delivers</h3>
+                            <p class="text-neutral-700">
+                                We design AI-powered workflow tools and machine
+                                learning integration solutions that solve real
+                                challenges, not hypothetical ones.
+                            </p>
+                        </div>
+
+                        <!-- Tools That Fit -->
+                        <div
+                            class="bg-gradient-to-br from-violet-50 via-white to-purple-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-violet-100">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-500 rounded-xl flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3">Tools
+                                That Fit Your Business</h3>
+                            <p class="text-neutral-700">
+                                Our platform-agnostic approach ensures seamless
+                                AI system integration across sales, marketing,
+                                and operations, utilizing the best tools for
+                                your needs.
+                            </p>
+                        </div>
+
+                        <!-- Row 2: 2 equal cards -->
+                        <!-- Smart Automation -->
+                        <div
+                            class="bg-gradient-to-br from-emerald-50 via-white to-teal-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-emerald-100">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3">Smart,
+                                Targeted Automation</h3>
+                            <p class="text-neutral-700">
+                                We prioritize processes that deliver maximum
+                                efficiency. Intelligent automation solutions
+                                eliminate repetitive tasks, freeing your team to
+                                focus on driving business growth.
+                            </p>
+                        </div>
+
+                        <!-- Built for Growth -->
+                        <div
+                            class="bg-gradient-to-br from-rose-50 via-white to-pink-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-rose-100">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-xl flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3">Built
+                                for Growth</h3>
+                            <p class="text-neutral-700">
+                                With enterprise AI automation solutions and AI
+                                digital transformation services, your workflows
+                                scale effortlessly with your business and
+                                evolving technology.
+                            </p>
+                        </div>
+
+                        <!-- Row 3: 1 card spanning full width -->
+                        <!-- Hands-On Support -->
+                        <div
+                            class="bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition hover:scale-[1.015] fade-in border-2 border-amber-100 md:col-span-2">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-black mb-3">Hands-On
+                                Support</h3>
+                            <p class="text-neutral-700">
+                                From deployment to adoption, we guide your team
+                                every step of the way. AI-powered business
+                                automation becomes an extension of your
+                                workforce.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pre-FAQ CTA Section -->
+            <section
+                class="py-16 md:py-24 bg-gradient-to-br from-[#F3BF00] to-yellow-200">
+                <div
+                    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
+                        Let's Streamline Your Workflow Today
+                    </h2>
+                    <p class="text-lg text-black/80 mb-6">
+                        Unlock the full potential of your operations with AI
+                        workflow automation and AI integration services designed
+                        for efficiency and growth. Our team will analyze your
+                        current processes, identify repetitive tasks, and
+                        demonstrate how business process automation services can
+                        save time and reduce costs.
+                    </p>
+                    <p class="text-lg text-black/80 mb-6">
+                        This is your chance to make intelligent automation
+                        solutions work for your business. Let's simplify
+                        operations, boost productivity, and scale with
+                        confidence.
+                    </p>
+                    <p class="text-xl font-semibold text-black mb-8">
+                        Book a free 30-minute automation audit to see exactly
+                        how AI-powered business automation and custom AI
+                        solutions can transform your workflows.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="../contact.html"
+                            class="bg-black text-[#F3BF00] font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                            Book Your Free Automation Audit Today
+                        </a>
+                        <a href="../index.html#services"
+                            class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">
+                            View All Services
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-black text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                        <div>
+                            <img src="../assets/images/logo.png" alt="Koodi"
+                                class="h-12 mb-4">
+                            <p class="text-neutral-400">AI automation and
+                                business process automation services that
+                                amplify your growth.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Services</h4>
+                            <ul class="space-y-2 text-neutral-400">
+                                <li><a href="ai-automation.html"
+                                        class="hover:text-[#F3BF00] transition">AI
+                                        & Workflow Automation</a></li>
+                                <li><a href="integration-api.html"
+                                        class="hover:text-[#F3BF00] transition">System
+                                        Integration & API</a></li>
+                                <li><a href="web-cms.html"
+                                        class="hover:text-[#F3BF00] transition">Web
+                                        & CMS Modernization</a></li>
+                                <li><a href="digital-transformation.html"
+                                        class="hover:text-[#F3BF00] transition">Digital
+                                        Transformation</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Company</h4>
+                            <ul class="space-y-2 text-neutral-400">
+                                <li><a href="../blog.html"
+                                        class="hover:text-[#F3BF00] transition">Case
+                                        Studies</a></li>
+                                <li><a href="../faq.html"
+                                        class="hover:text-[#F3BF00] transition">FAQ</a></li>
+                                <li><a href="../contact.html"
+                                        class="hover:text-[#F3BF00] transition">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Get Started</h4>
+                            <a href="../contact.html"
+                                class="inline-block bg-[#F3BF00] text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:brightness-110 transition">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-neutral-800 pt-8 text-center text-neutral-400">
+                        <p>&copy; 2025 Koodi. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="../assets/js/main.js"></script>
+        </body>
+    </html>
