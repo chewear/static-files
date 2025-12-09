@@ -64,17 +64,19 @@
 
         @media (min-width: 1024px) {
             .hero-fade::before {
-                background-size: auto 75%;
-                background-position: right bottom;
+                background-size: contain;
+                background-position: right center;
                 opacity: 1;
+                left: 50%;
+                right: 0;
+                width: 50%;
             }
             .hero-fade::after {
                 background: linear-gradient(to right, 
-                    rgba(255,255,255,0.98) 0%, 
-                    rgba(255,255,255,0.95) 20%, 
-                    rgba(255,255,255,0.85) 35%, 
-                    rgba(255,255,255,0.70) 50%, 
-                    transparent 65%, 
+                    rgba(255,255,255,1) 0%, 
+                    rgba(255,255,255,1) 45%, 
+                    rgba(255,255,255,0.3) 48%, 
+                    transparent 50%, 
                     transparent 100%);
             }
         }
@@ -192,7 +194,7 @@
             class="hero-fade relative overflow-hidden bg-gradient-to-br from-white to-[#F3BF00]/20 py-16 md:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="max-w-4xl text-left fade-in">
+                    <div class="text-left fade-in lg:w-2/3 lg:pr-8">
                         <h1
                             class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
                             Stop Doing Manual Work. Let AI Run Your Routine
